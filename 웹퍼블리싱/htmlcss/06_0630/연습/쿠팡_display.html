@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>쿠팡 display</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+            vertical-align: top;
+        }
+
+        .coupang {
+            width: 980px;
+            background: #fee;
+        }
+
+        .coupang h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .coupang .product {}
+
+        .coupang .product ul {}
+
+        .coupang .product ul li {
+            width: 278px;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #333;
+            display: inline-block;
+            margin-right: 40px;
+        }
+
+        .coupang .product ul li:last-child{
+            margin-right: 0;
+        }
+
+        .coupang .product ul li .photo {}
+
+        .coupang .product ul li .photo img {
+            width: 278px;
+            height: auto;
+        }
+
+        .coupang .product ul li .info {}
+
+        .coupang .product ul li .info .name {
+            padding: 10px 10px 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .coupang .product ul li .info .num {
+            padding: 5px 0;
+        }
+
+        .coupang .product ul li .info .num .discount {
+            display: inline;
+            margin-right: 10px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #f00;
+        }
+
+        .coupang .product ul li .info .num .price {
+            display: inline;
+        }
+
+        .coupang .product ul li .info .num .price .origin {
+            font-size: 16px;
+            color: #aaa;
+            text-decoration: line-through;
+            display: inline-block;
+        }
+
+        .coupang .product ul li .info .num .price .cost {
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        .coupang .product ul li .category {
+            font-size: 11px;
+            margin: 10px 0;
+            border-top: 1px solid #666; 
+        }
+
+        .coupang .product ul li .category .new {
+            display: inline-block;
+            margin: 3px;
+            border: 1px solid #f00;
+            color: #f00;
+        }
+
+        .coupang .product ul li .category .amount {
+            text-align: right;
+            color: #666;
+        }
+
+        .coupang .product ul li .category .amount strong {
+            color: #222;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="coupang">
+        <h2>쿠팡 가정의달 특가</h2>
+        <div class="product">
+            <ul>
+                <li>
+                    <div class="photo">
+                        <img src="../../자료/float연습예제/img/coupang1.jpg" alt="카네이션 어버이날 선물">
+                    </div><!--.photo-->
+                    <div class="info">
+                        <div class="name">카네이션 어버이날 선물</div><!--.name-->
+                        <div class="num">
+                            <div class="discount">58%</div><!--.discount-->
+                            <div class="price">
+                                <span class="origin">10,000원</span><!--.origin-->
+                                <strong class="cost">8,000원</strong><!--.cost-->
+                            </div><!--.price-->
+                        </div><!--.num-->
+                    </div><!--.info-->
+                    <div class="category">
+                        <p class="new">신규상품</p><!--.new-->
+                        <p class="amount"><strong>372</strong>개 구매중</p><!--amount-->
+                    </div><!--.category-->
+                </li><!--li-->
+                <li>
+                    <div class="photo">
+                        <img src="../../자료/float연습예제/img/coupang2.jpg" alt="러브 카네이션 선물세트 핑크">
+                    </div><!--.photo-->
+                    <div class="info">
+                        <div class="name">러브 카네이션 선물세트 핑크</div><!--.name-->
+                        <div class="num">
+                            <div class="discount">40%</div><!--.discount-->
+                            <div class="price">
+                                <span class="origin">13,000원</span><!--.origin-->
+                                <strong class="cost">7,000원</strong><!--.cost-->
+                            </div><!--.price-->
+                        </div><!--.num-->
+                    </div><!--.info-->
+                    <div class="category">
+                        <p class="new">신규상품</p><!--.new-->
+                        <p class="amount"><strong>520</strong>개 구매중</p><!--amount-->
+                    </div><!--.category-->
+                </li><!--li-->
+                <li>
+                    <div class="photo">
+                        <img src="../../자료/float연습예제/img/coupang3.jpg" alt="카네이션 미니 꽃다발 세트">
+                    </div><!--.photo-->
+                    <div class="info">
+                        <div class="name">카네이션 미니 꽃다발 세트</div><!--.name-->
+                        <div class="num">
+                            <div class="discount">33%</div><!--.discount-->
+                            <div class="price">
+                                <span class="origin">18,000원</span><!--.origin-->
+                                <strong class="cost">9,500원</strong><!--.cost-->
+                            </div><!--.price-->
+                        </div><!--.num-->
+                    </div><!--.info-->
+                    <div class="category">
+                        <p class="new">신규상품</p><!--.new-->
+                        <p class="amount"><strong>100</strong>개 구매중</p><!--amount-->
+                    </div><!--.category-->
+                </li><!--li-->
+            </ul><!--ul-->
+        </div><!--.product-->
+    </div><!--.coupang-->
+</body>
+
+</html>

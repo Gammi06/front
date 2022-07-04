@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>태그배치1_display</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+            vertical-align: top;
+        }
+
+        #list1 {
+        }
+
+        #list1 ul {
+            text-align: right;
+            /*
+            <ul>, <li>태그는 블록요소이므로
+            {text-align: center;}속성으로 가운데 배치되지 못함.
+            -> 현재 <li>태그가 {display:inline-block}요소로
+                변환되었기 때문에 글자, inline요소 가운데
+                배치속성이 적용될 수 있는 상황임
+            */
+        }
+
+        #list1 li {
+            width: 120px;
+            height: 16px;
+            background: #f77;
+            text-align: center;
+            font-size: 16px;
+            line-height: 16px;
+            padding: 12px 0;
+            display: inline-block;
+        }
+
+        #list1 ul li:nth-of-type(1) { 
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;  
+        }
+
+        #list1 ul li:nth-of-type(4) { 
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;  
+        }
+
+        #list1 ul li a {
+            color: #fff;
+            display: block;
+            /*
+            <a>태그에 포함된 글자색상은
+            항상 <a>태그에 color값을 지정해야 함
+            */
+        }
+
+        #list1 ul li:hover {
+            background: #fc0;
+        }
+
+        #list1 ul li:hover a {
+            color: #222;
+        }
+
+        #list2 {}
+
+        #list2 ul {
+            font-size: 0;
+        }
+
+        #list2 ul li {
+            display: inline-block;
+            border-right: 1px solid #222;
+            font-size: 16px;
+            line-height: 16px;
+            padding: 0 20px;
+            
+            /*
+            {display: inline-block;}
+            -> 문제점: 인라인요소 특징으로 스페이스바 한칸의
+            여백이 우측으로 들어가 있음
+            여백이 없어야 실제 ui의 여백값을 정확히 적용할 수 있음
+
+            1) margin값 음수로 사용: margin-right: -4px;
+                -> 브라우저마다 인식이 되지 않을 수 있음
+
+            2) 글자크기 변경: 부모태그에게 font-size: 0;
+               해당태그 font-size: 값; 지정
+               (주의할 점: 부모태그에게도 여백 값이 변경됨
+                -> float 사용 시 여백은 생기지 않음)
+
+            */
+            /*margin-right: -4px;*/
+        }
+
+        #list2 ul li:last-child{
+            border-right: none;
+            padding-right: 0;
+        }
+
+        #list2 ul li a{
+            display: block;
+        }
+
+        #list2 ul li a:hover {
+            background: #fc0;
+        }
+
+        body {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .nh1 {
+            background: #dff;
+            font-size: 50px;
+            line-height: 50px;
+        }
+
+        .nh2 {
+            background: #ddf;
+            font-size: 100px;
+            line-height: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="list1">
+        <ul>
+            <li><a href="#">메뉴 1</a></li>
+            <li><a href="#">메뉴 2</a></li>
+            <li><a href="#">메뉴 3</a></li>
+            <li><a href="#">메뉴 4</a></li>
+        </ul>
+    </div><!--#list1-->
+    <div id="list2">
+        <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">언어선택</a></li>
+        </ul>
+    </div><!--#list2-->
+    <p class="nh1">줄높이 간격 50</p>
+    <p class="nh2">줄높이 간격 100</p>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>태그배치_display연습</title>
+    <style>
+        /*     초기화 설정     */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+            vertical-align: top;
+        }
+
+        /*    클래스들     */
+        #wrap {
+            font-size: 16px;
+            line-height: 20px;
+            font-family: "맑은 고딕", sans-serif;
+            width: 980px;
+        }
+
+        #wrap .header {
+            height: 150px;
+            margin: 30px 0;
+            border-bottom: 1px solid #111;
+        }
+
+        #wrap .header .logo{
+            /*margin-bottom: 20px;*/
+        }
+
+        #wrap .header .logo ul {
+            font-size: 0;
+        }
+
+        #wrap .header .logo ul li {
+            display: inline-block;
+            border-right: 1px solid #111;
+            padding: 0 20px;
+            font-size: large;
+            line-height: 20px;
+        }
+
+        #wrap .header .logo ul li strong {
+            color: #f00;
+        }
+
+        #wrap .header .logo ul li p {
+            font-weight: normal;
+        }
+
+        #wrap .header .logo ul li:nth-child(2){
+            border-right: none;
+        }
+
+        #wrap .header .menu1 {
+            text-align: right;
+        }
+
+        #wrap .header .menu1 ul {}
+
+        #wrap .header .menu1 ul li {
+            display: inline-block;
+            width: 116px;
+            height: 16px;
+            line-height: 16px;
+            border-radius: 20px;
+            border: 2px solid #666;
+            padding: 10px 0;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #wrap .header .menu1 ul li:last-child{
+            margin-right: 0;
+        }
+
+        #wrap .header .menu1 ul a {
+            display: block;
+        }
+
+        #wrap .header .menu1 ul li:hover{
+            background: #f00;
+            border: 2px solid #f00;
+        }
+
+        #wrap .header .menu1 ul li:active{
+            background: #f00;
+            border: 2px solid #f00;
+        }
+
+        #wrap .header .menu1 ul a:active {
+            color: #fff;
+        }
+
+        #wrap .header .menu2 {
+        }
+
+        #wrap .header .menu2 ul {
+            font-size: 0;
+        }
+
+        #wrap .header .menu2 ul li {
+            display: inline-block;
+            padding: 0 20px;
+            font-size: 16px;
+            line-height: 16px;
+            border-right: 1px solid #111;
+        }
+
+        #wrap .header .menu2 ul li:last-child {
+            margin-right: 0;
+            border-right: 0;
+        }
+
+        #wrap .header .menu2 ul a:hover {
+            color: #f00;
+        }
+
+        #wrap .contents {
+            margin-top: 50px;
+        }
+
+        #wrap .contents .title {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        #wrap .contents .info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #wrap .contents .event {
+        }
+
+        #wrap .contents .event ul {}
+
+        #wrap .contents .event ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #wrap .contents .event ul li {
+            width: 300px;
+            border-bottom: 1px solid #ccc;
+            margin-right: 40px;
+            float: left;
+        }
+
+        #wrap .contents .event ul li:last-child {
+            margin-right: 0;
+        }
+
+        #wrap .contents .event ul a {}
+
+        #wrap .contents .event .photo {}
+
+        #wrap .contents .event .photo img {
+            width: 300px;
+            height: auto;
+        }
+
+        #wrap .contents .event .txt {
+            font-size: 18px;
+            padding: 12px;
+            text-align: center;
+            background: #fff;
+        }
+
+        #wrap .contents .event .txt .tit {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #wrap .contents .event .txt .date {
+            font-size: 12px;
+        }
+
+        #wrap .contents .event ul li:hover .txt {
+            background: #fee;
+        }
+
+        #wrap .contents .event ul li:hover .txt .tit {
+            text-decoration: underline;
+            color: #f00;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header">
+            <h2 class="logo">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank"><strong>LG전자</strong></a>
+                    </li>
+                    <li>
+                        <p>BEST SHOP</p>
+                    </li>
+                </ul>
+            </h2><!--.logo-->
+            <div class="menu1">
+                <ul>
+                    <li><a href="#">매장안내</a></li>
+                    <li><a href="#">매장상담예약</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">혜택안내</a></li>
+                    <li><a href="#">제품정보</a></li>
+                </ul>
+            </div><!--.menu1-->
+            <div class="menu2">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">브랜드소개</a></li>
+                    <li><a href="#">B2B</a></li>
+                    <li><a href="#">LGE.COM</a></li>
+                </ul>
+            </div><!--.menu2-->
+        </div><!--#header-->
+        <div class="contents">
+            <h2 class="title">베스트샵 이벤트</h2><!--title-->
+            <p class="info">이벤트 소식받고! 다양한 혜택받고!</p><!--info-->
+            <div class="event">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="photo">
+                                <img src="../자료/태그배치_display연습예제/images/event_01.jpg" alt="LG 휘센 2022 미리구매 대축제">
+                            </div><!--.photo-->
+                            <div class="txt">
+                                <div class="tit">LG 휘센 2022 미리구매<br>대축제</div>
+                                <div class="date">2022.05.17 ~ 2022.06.30</div>
+                            </div><!--txt-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="photo">
+                                <img src="../자료/태그배치_display연습예제/images/event_02.png" alt="LG전자 베스트샵 6월 오브제 웨딩페어">
+                            </div><!--.photo-->
+                            <div class="txt">
+                                <div class="tit">LG전자 베스트샵<br>6월 오브제 웨딩페어</div>
+                                <div class="date">2022.05.31 ~ 2022.06.30</div>
+                            </div><!--txt-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="photo">
+                                <img src="../자료/태그배치_display연습예제/images/event_03.jpg" alt="7월 소형가전 한정수량 특가 이벤트">
+                            </div><!--.photo-->
+                            <div class="txt">
+                                <div class="tit">7월 소형가전 한정수량 특가<br>이벤트</div>
+                                <div class="date">2022.06.30 ~ 2022.07.31</div>
+                            </div><!--txt-->
+                        </a>
+                    </li>
+                </ul>
+            </div><!--event-->
+        </div><!--#contents-->
+    </div><!--#wrap-->
+</body>
+
+</html>

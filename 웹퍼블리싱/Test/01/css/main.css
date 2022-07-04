@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+#wrap {
+    width: 1100px;
+}
+
+/*스벅은 넓이의 최대값을 1100으로 잡아두었음*/
+#wrap .header {
+    background-color: #f6f5ef;
+    border-bottom: 1px solid #e5e5e5;
+    height: 120px;
+}
+
+#wrap .header div {
+    float: left;
+}
+
+
+#wrap .header .logo {
+    width: 120px;
+    height: 120px;
+}
+
+#wrap .header .menu1 {
+    width: 980px;
+    height: 60px;
+}
+
+#wrap .header .menu1 ul li {
+    display: inline-block;
+    float: right;
+}
+
+#wrap .header .menu2 {
+    width: 980px;
+    height: 60px;
+}
+
+#wrap .header .menu2 ul li {
+    display: inline-block;
+    float: right;
+}

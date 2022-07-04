@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>float예제연습_02</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        img {
+            border: none;
+            vertical-align: top;
+        }
+
+        #coupang {
+            width: 980px;
+            background: #fee;
+        }
+
+        #coupang h2{
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        #coupang .product {}
+
+        #coupang .product ul {}
+        #coupang .product ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #coupang .product ul li {
+            width: 278px;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #333;
+            float: left;
+            margin-right: 40px;
+        }
+
+        #coupang .product ul li:last-child{
+            margin-right: 0;
+        }
+
+        #coupang .product ul li .photo {}
+
+        #coupang .product ul li .photo img {
+            width: 278px;
+            height: auto;
+        }
+
+        #coupang .product ul li .info {}
+
+        #coupang .product ul li .info .name {
+            padding: 10px 10px 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #coupang .product ul li .info .num {
+            padding: 5px 0;
+        }
+        #coupang .product ul li .info .num::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #coupang .product ul li .info .num div {
+            float: left;
+        }
+
+        #coupang .product ul li .info .num .discount {
+            font-size: 36px;
+            font-weight: bold;
+            color: #f00;
+            margin-right: 10px;
+        }
+
+        #coupang .product ul li .info .num .price {}
+
+        #coupang .product ul li .info .num .price .origin {
+            font-size: 16px;
+            color: #aaa;
+            text-decoration: line-through;
+            display: block;
+        }
+
+        #coupang .product ul li .info .num .price span{
+            display: block;
+        }
+
+        #coupang .product ul li .info .num .price .cost {
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        #coupng .product ul li .info .num .price strong{
+            display: block;
+        }
+
+        #coupang .product ul li .category {
+            font-size: 11px;
+            padding: 10px 0;
+            border-top: 1px solid #666;
+        }
+        #coupang .product ul li .category::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #coupang .product ul li .category .new {
+            border: 1px solid #f00;
+            color: #f00;
+            padding: 3px;
+            float: left;
+        }
+
+        #coupang .product ul li .category .amount {
+            text-align: right;
+            color: #666;
+            float: right ;
+        }
+
+        #coupang .product ul li .category .amount strong {
+            color: #222;
+        }
+
+        #coupang .product ul li:hover {
+            border: 1px solid #09f;
+        }
+
+        #coupang .product ul li:hover .info .name {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="coupang">
+        <h2>쿠팡 가정의달 특가</h2>
+        <div class="product">
+            <ul>
+                <li>
+                    <div class="photo">
+                        <img src="../자료/float연습예제/img/coupang1.jpg" alt="카네이션 어버이날 선물">
+                    </div>
+                    <div class="info">
+                        <div class="name">카네이션 어버이날 선물</div>
+                        <div class="num">
+                            <div class="discount">58%</div>
+                            <div class="price">
+                                <span class="origin">10,000원</span>
+                                <strong class="cost">8,000원</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <p class="new">신규상품</p>
+                        <p class="amount"><strong>372</strong>개 구매중</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                        <img src="../자료/float연습예제/img/coupang2.jpg" alt="러브 카네이션 선물세트 핑크">
+                    </div>
+                    <div class="info">
+                        <div class="name">러브 카네이션 선물세트 핑크</div>
+                        <div class="num">
+                            <div class="discount">40%</div>
+                            <div class="price">
+                                <span class="origin">13,000원</span>
+                                <strong class="cost">7,000원</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <p class="new">신규상품</p>
+                        <p class="amount"><strong>520</strong>개 구매중</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="photo">
+                        <img src="../자료/float연습예제/img/coupang3.jpg" alt="카네이션 미니 꽃다발 세트">
+                    </div>
+                    <div class="info">
+                        <div class="name">카네이션 미니 꽃다발 세트</div>
+                        <div class="num">
+                            <div class="discount">33%</div>
+                            <div class="price">
+                                <span class="origin">18,000원</span>
+                                <strong class="cost">9,500원</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <p class="new">신규상품</p>
+                        <p class="amount"><strong>100</strong>개 구매중</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

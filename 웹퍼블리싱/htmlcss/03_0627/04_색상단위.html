@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>색상단위</title>
+</head>
+<body>
+    <div>키워드</div>
+    <div style="width:200px; height:200px; background: lavender;"></div><br>
+    
+    <div>헥스코드</div>
+    <div style="width:200px; height:200px; background: #e6e6fa;"></div><br>
+    헥스코드<br>
+    검정: #000
+    흰색: #fff
+    빨강: #f00
+    초록: #0f0
+    파랑: #00f
+    <br><br>
+    
+    <div>RGB: RED(빨강) GREEN(초록) BLUE(파랑)<br>
+        0~255 숫자<br>
+        {background:rgb(255,0,0)}
+    </div>
+    <div style="width:200px; height:200px; background:rgb(230, 230, 250);"></div><br>
+    
+    <div>RGBA: 색상값 rgb alpha 투명도를 더해 표현<br>
+        {background:rgba{0,0,0,0}}<br></div>
+    <div style="width:200px; height:200px; background:rgba(230, 230, 250, 0.5);"></div><br>
+    
+    <div>HSL: hue 색상 / saturation 채도 / lightness 명도<br>
+        h 색상: 0~360도 (빨강 0 or 360)<br>
+        s 채도: 0~100% (0% 회색 / 100% 원톤)<br>
+        l 명도: 0~100% (0% 검정 / 100% 흰색<br>
+        {background:hsl(0, 100%, 70%)}: 빨강 원톤 밝기 70%<br></div>
+    <div style="width:200px; height:200px; background:hsl(240, 67%, 94%);"></div><br>
+
+    <div>그라데이션<br>
+        {background:linear-gradient(방향, 시작색상, 끝색상)}<br>
+        !! 그라디언트(가로)사이에 띄워쓰기하면 안됨<br>
+        방향: to top / to bottom / to right / to left<br>
+        대각선: to bottom right ...<br>
+        각도로 표기: 0deg(아래에서 위로) / 90deg(왼쪽에서 오른쪽)(시계방향)
+        - 색상키워드, #, RGB 등 값 모두 사용 가능
+    </div>
+    <div style="width:200px; height:200px;
+    background:linear-gradient(to bottom right, #fed4ff, #c4e9ff);"></div><br>
+</body>
+</html>

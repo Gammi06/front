@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<head>
+     <meta charset="utf-8">
+     <title>LG전자 연습예제</title>
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+          }
+
+          ul {
+               list-style: none;
+          }
+
+          a {
+               color: #111;
+               text-decoration: none;
+          }
+
+          img {
+               border: 0;
+               vertical-align: top;
+          }
+
+          body {
+               font-size: 16px;
+               line-height: 20px;
+               font-family: "맑은 고딕" sans-serif;
+          }
+
+          #wrap {
+               width: 980px;
+          }
+
+          /*  ///////////     header     ///////////*/
+
+          #wrap .header {
+               height: 149px;
+               margin-top:  30px;
+               border-bottom: 1px solid #222;
+          }
+
+          #wrap .header .logo { 
+               margin-bottom: 20px;
+               font-size: 0;
+          }
+
+          #wrap .header .logo strong {
+               font-size: 24px;
+               display: inline-block;
+               border-right: 1px solid #222;
+               padding: 0 20px;
+          }
+
+          #wrap .header .logo a {
+               color:  #f00;
+          }
+
+          #wrap .header .logo p {
+               font-weight: normal;
+               font-size: 24px;
+               display: inline-block;
+               padding:  0 20px;
+          }
+
+          #wrap .header .menu1 {}
+
+          #wrap .header .menu1::after {
+               content: "";
+               display: block;
+               clear: both;
+          }
+
+          #wrap .header .menu1 ul {
+               float: right;
+               font-size: 0;
+          }
+
+          #wrap .header .menu1 ul li {
+               display: inline-block;
+               width: 116px;
+               height: 16px;
+               border-radius: 20px;
+               border: 2px solid #888;
+               text-align: center;
+               line-height: 16px;
+               font-size: 16px;
+               padding: 10px 0;
+               margin: 0 20px 20px 0;
+          }
+
+          #wrap .header .menu1 ul li:last-child {
+               margin-right: 0;
+          }
+
+          #wrap .header .menu1 a {
+               display: block;
+          }
+
+          #wrap .header .menu2 {}
+
+          #wrap .header .menu2 ul {
+               font-size: 0;
+          }
+
+          #wrap .header .menu2 ul li {
+               font-size: 16px;
+               line-height: 16px;
+               display: inline-block;
+               border-right: 1px solid #111;
+               padding: 0 20px;
+          }
+          
+          #wrap .header .menu2 ul li:last-child {
+               border-right: 0;
+          }
+
+          /*  ///////////     header - hover    ///////////*/
+
+          #wrap .header .menu1 li:hover {
+               background-color: #f00;
+               border: 2px solid #f00;
+          }
+          
+          /* #wrap .header .menu1 li:hover (.active) a {
+               color:#fff;
+               */
+
+          #wrap .header .menu1 li:nth-child(3):active a {
+               color: #fff;
+          }
+
+          #wrap .header .menu2 li:hover a {
+               color: #f00;
+          }
+
+          /*  ///////////     contents     ///////////*/
+
+          #wrap .contents {
+               margin-top: 50px;
+          }
+
+          #wrap .contents .title {
+               text-align: center;
+               margin-bottom: 15px;
+          }
+
+          #wrap .contents .info {
+               text-align: center;
+               margin-bottom: 20px;
+          }
+
+          #wrap .contents .event {}
+
+          #wrap .contents .event ul::after {
+               content: "";
+               display: block;
+               clear: both;
+          }
+
+          #wrap .contents .event ul li {
+               float: left;
+               width: 300px;
+               border-bottom: 1px solid #888;
+               margin-right: 40px;
+          }
+
+          #wrap .contents .event ul li:last-child {
+               margin-right: 0;
+          }
+
+          #wrap .contents .event .photo {}
+
+          #wrap .contents .event .photo img {
+               width: 300px;
+               height: auto;
+          }
+
+          #wrap .contents .event .txt {
+               font-size: 18px;
+               text-align: center;
+               padding: 12px;
+               background-color: #fff;
+          }
+
+          #wrap .contents .event .txt .tit {
+               font-weight: bold;
+               margin-bottom: 10px;
+          }
+
+          #wrap .contents .event .txt .date {
+               font-size: 12px;
+          }
+
+          /*  ///////////     contents - hover    ///////////*/
+
+          #wrap .contents .event ul li:hover .txt {
+               background-color: #fee;
+          }
+
+          #wrap .contents .event ul li:hover .tit {
+               text-decoration: underline;
+               color: #f00;
+          }
+
+     </style>
+</head>
+
+<body>
+     <div id="wrap">
+          <div class="header">
+               <h2 class="logo">
+                    <strong><a href="#" target="_blank">LG전자</a></strong>
+                    <p>BEST SHOP</p>
+               </h2><!--.logo-->
+               <div class="menu1">
+                    <ul>
+                         <li><a href="#">매장안내</a></li>
+                         <li><a href="#">매장상담예약</a></li>
+                         <li><a href="#">이벤트</a></li>
+                         <li><a href="#">혜택안내</a></li>
+                         <li><a href="#">제품정보</a></li>
+                    </ul>
+               </div><!--menu1-->
+               <div class="menu2">
+                    <ul>
+                         <li><a href="#">로그인</a></li>
+                         <li><a href="#">브랜드소개</a></li>
+                         <li><a href="#">B2B</a></li>
+                         <li><a href="#">LGE.COM</a></li>
+                    </ul>
+               </div><!--menu2-->
+          </div><!--.header-->
+          <div class="contents">
+               <h2 class="title">베스트샵 이벤트</h2>
+               <p class="info">이벤트 소식받고! 다양한 혜택받고!</p>
+               <div class="event">
+                    <ul>
+                         <li>
+                              <a href="#">
+                                   <div class="photo">
+                                        <img src="../자료/태그배치_display연습예제/images/event_01.jpg" arlt="LG 휘센 2022 미리구매 대축제">
+                                   </div><!--.photo-->
+                                   <div class="txt">
+                                        <p class="tit">LG 휘센 2022 미리구매<br>대축제</p>
+                                        <p class="date">2022.05.17 ~ 2022.06.30</p>
+                                   </p>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#">
+                                   <div class="photo">
+                                        <img src="../자료/태그배치_display연습예제/images/event_02.png" arlt="LG전자 베스트샵 6월 오브제 웨딩페어">
+                                   </div><!--.photo-->
+                                   <div class="txt">
+                                        <p class="tit">LG전자 베스트샵<br>6월 오브제 웨딩페어</p>
+                                        <p class="date">2022.05.31 ~ 2022.06.30</p>
+                                   </p>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#">
+                                   <div class="photo">
+                                        <img src="../자료/태그배치_display연습예제/images/event_03.jpg" arlt="7월 소형가전 한정수량 특가 이벤트">
+                                   </div><!--.photo-->
+                                   <div class="txt">
+                                        <p class="tit">7월 소형가전 한정수량 특가<br>이벤트</p>
+                                        <p class="date">2022.06.30 ~ 2022.07.31</p>
+                                   </p>
+                              </a>
+                         </li>
+                    </ul>
+               </div><!--.event-->
+          </div><!--.contents-->
+     </div><!--#wrap-->
+</body>
+
+</html>

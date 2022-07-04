@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>가로배열연습</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        img {
+            border: none;
+            vertical-align: top;
+        }
+
+        /*         ///////////////////////         */
+
+        #test {
+            background: #ffa;
+            width: 420px;
+        }
+        #test::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #test p{
+            width: 130px;
+            height: 130px;
+            background: #fc0;
+            float: left;
+            margin-right: 15px;
+        }
+
+        #test :last-child{
+            margin-right: 0;
+        }
+
+        /*         /////////////////////// d1         */ 
+
+        #d1{
+            background: #f0f;
+            width: 320px;
+        }
+        #d1::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #d1 p{
+            background: #ffb6c1;
+            width: 100px; height: 100px;
+            margin-right: 10px;
+            float: left;
+        }
+
+        #d1 :last-child{
+            margin-right: 0;
+        }
+
+        /*         /////////////////////// d2         */ 
+
+        #d2 {
+            background: #ffa500;
+            width: 525px;
+        }
+        #d2::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #d2 p{
+            background: #ff0;
+            width: 120px; height: 120px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        #d2 :last-child{
+            margin-right: 0;
+        }
+
+        /*         /////////////////////// d3         */ 
+
+        #d3 {
+            background: #008000;
+            width: 548px;
+            /* 120*4= 480  1*8= 8  20*3= 60 */
+        }
+        #d3::after
+        {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #d3 p{
+            width: 120px; height: 120px;
+            background: #90ee90;
+            margin-right: 20px;
+            border: 1px solid #111;
+            float: left;
+        }
+
+        #d3 :last-child{
+            margin-right: 0;
+        }
+
+        /*         /////////////////////// d4         */ 
+
+        #d4 {
+            background: #00f;
+            width: 370px;
+        }
+        #d4::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        #d4 p{
+            width: 110px; height: 110px;
+            background: #87ceeb;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            float: left;
+        }
+
+        #d4 :nth-child(3n){
+            margin-right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="test">
+        <p>연습 1</p>
+        <p>연습 2</p>
+        <p>연습 3</p>
+    </div>
+    <br><br><br>
+    <div id="d1">
+        <p>d1_1</p>
+        <p>d1_2</p>
+        <p>d1_3</p>
+    </div>
+    
+    <br><br><br>
+    
+    <div id="d2">
+        <p>d2_1</p>
+        <p>d2_2</p>
+        <p>d2_3</p>
+        <p>d2_4</p>
+    </div>
+    
+    <br><br><br>
+    
+    <div id="d3">
+        <p>d3_1</p>
+        <p>d3_2</p>
+        <p>d3_3</p>
+        <p>d3_4</p>
+    </div>
+
+    <br><br><br>
+    
+    <div id="d4">
+        <p>d4_1</p>
+        <p>d4_2</p>
+        <p>d4_3</p>
+        <p>d4_4</p>
+        <p>d4_5</p>
+        <p>d4_6</p>
+    </div>
+</body>
+</html>

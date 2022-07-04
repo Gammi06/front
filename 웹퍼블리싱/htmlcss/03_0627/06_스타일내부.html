@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>스타일내부</title>
+    <style>
+        div{
+            color:#90f;
+        }
+
+        #nameID{
+            width: 100px;
+            height: 100px;
+            background: #fe0;
+            color: #000;
+        }
+
+        .nameClass{
+            font-size: 30px;
+            color: #f00;
+            font-weight: bold;
+        }
+
+        .red{
+            color: #f00;
+        }
+
+        #event{
+            width: 600px;
+            height: 600px;
+            background: #cee;
+            border: 3px solid #00f;
+        }
+
+        #event h2{
+            text-align: right;
+        }
+
+        #event .photoClass{
+            text-align: center;
+            /*
+            text-align속성은
+            1) 글자 정렬 왼쪽/가운데/오른쪽 변경 가능
+            2) 인라인요소 태그들도 정렬 가능
+            <span> <strong> <a> <img> ...
+            */
+        }
+
+        .photoClass{
+        }
+        
+    </style>
+</head>
+<body>
+    <div>태그</div>
+    <div id ="nameID">id 선택자</div>
+    <div class ="nameClass">class 선택자</div>
+
+    <div>
+        <h1>백엔드 개발</h1>
+        <ol>
+            <li class="red">Python 파이썬</li>
+            <li>JAVA 자바</li>
+            <li class="red">C++</li>
+            <li>PHP</li>
+        </ol>
+    </div>
+
+    <div id="event">
+        <h2>이벤트 영역</h2>
+        <p class="photoClass">
+            <img src="../0624/img/visual1.jpg" alt="유니콘 옷을 입은 강아지 사진">
+        </p>
+    </div>
+</body>
+</html>

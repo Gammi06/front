@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>자료형_03논리형</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/template.css" rel="stylesheet">
+</head>
+
+<body>
+<section>
+	<h2>
+        3) 논리형 Boolean (불린)
+    </h2>
+    <textarea class="ht4">
+    논리형 Boolean (불린)
+    : 2개의 데이터를 비교할 때 나오는 결과를 표현할 때 사용
+    
+    결과값: true(참) 1 / false(거짓) 0
+
+    * 논리형 이해: 5년전 회원가입때 작성한 아이디, 비밀번호 (데이터1)
+                   지금 로그인할때 작성한 아이디, 비밀번호 (데이터2)
+                   > 데이터 2개를 비교해 값이 동일하다면? true;
+                   > 데이터 2개를 비교해 값이 다르다면? false;
+    
+    : 불린이라는 자료형태이기 때문에 따옴표를 사용하면 안됨
+    </textarea>
+</section>
+
+<section>
+	<h3>
+        비교 연산자
+    </h3>
+    <!--
+        연산자 부등호때문에 주석으로 작성함
+
+        이상        >=
+        이하        <=
+        초과        >
+        미만        <
+        같다        ==
+        같지않다    !=
+    -->
+    <textarea class="ht3">
+    숫자값만 비교, 자료형 상관없음:
+    A == B  : A와 B는 같다          (true : 숫자 일치)
+    A != B  : A와 B는 같지 않다     (false: 숫자 불일치)
+
+    숫자값, 자료형 모두 비교:
+    A == B  : A와 B는 같다.         (숫자값, 자료형 모두 일치해야 비교 가능) 
+    A != B  : A와 B는 같지않다.
+    </textarea>
+
+    <script>
+        console.log('비교 연산자 시작');
+        console.log(5 > 10);    // 거짓
+        console.log(5 >= 10);   // 거짓
+        console.log(5 < 10);    // 참
+        console.log(5 == 10);   // 거짓
+        console.log(5 != 10)    // 참
+
+        console.log('모두 비교');
+        console.log(10 === '10');       //숫자값, 자료명 불일치 false
+        
+        console.log('변수 문자, 숫자형 함께 비교');
+        var young = 5;
+        var old = 10;
+        var a = 'abc';
+        var x = 'xyz';
+        console.log(young > old);
+        console.log(a < x);         // 알파벳 순서상 a보다 x가 뒤에 있기 때문에
+        console.log(old <= x);      // 자료형이 같지않아 비교불가
+
+        var order= '가방' < "나비"; // 한글 순서상 ㄱ보다 ㄴ이 뒤에 있기 때문에
+        console.log(order);
+
+        /*
+        자료형 파악할때 사용하는 typeof 연산자
+        typeof 연산자: 저장된 자료형을 확인할 때 사용
+         - 다른 개발자 변수의 자료형태를 알아야 할때
+         - API통신 등을 통해 받은 데이터를 type유형에 따라
+           다른 방식 처리시 주로 사용
+        */
+
+        console.log('자료형 파악');
+        console.log(typeof 10);
+        console.log(typeof '문자');
+        console.log(typeof true);
+        console.log(typeof '10');
+    </script>
+</section>
+
+<section>
+    <h3>
+        형변환 Type Conversion
+    </h3>
+    <textarea class="ht5">
+    * 형변환
+    String() : 문자형으로 변환
+    Number() : 숫자형으로 변환
+    Boolean(): 불린형으로 변환
+
+    * 형변환 이유
+    자료형이 다를 경우, 의도치않은 결과값 도출됨
+    문자 + 문자 = 문자
+    숫자 + 숫자 = 숫자(합계)
+    문자 + 숫자 = ??? (오류)
+    </textarea>
+    <script>
+        var eng = prompt('영어 점수는?', '');
+        var math = prompt('수학 점수는?', '');
+        var total = (eng + math) / 2;
+        document.write(total);
+
+    </script>
+</section>
+
+</body>
+</html>
+
+
+
+
+

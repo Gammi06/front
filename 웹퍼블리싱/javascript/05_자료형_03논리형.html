@@ -107,11 +107,28 @@
     문자 + 숫자 = ??? (오류)
     </textarea>
     <script>
-        var eng = prompt('영어 점수는?', '');
-        var math = prompt('수학 점수는?', '');
+        /*
+        var eng = prompt('영어 점수는?', '');   // 70
+        var math = prompt('수학 점수는?', '');  // 30
         var total = (eng + math) / 2;
         document.write(total);
+        */
+        // 출력: 3515 prompt받은 값은 문자형으로 인식
+        // (70 + 30) / 2 = 7030 / 2 = 3515
+        // 나누기일때는 숫자형이 아니더라도 => 숫자형 자동변환 인식 (자동 형변환)
+    
+        // 문자형, 숫자형변환
+        var t1 = String(true);
+        console.log(typeof t1);
 
+        var nums = Number('1234');
+        console.log(typeof nums);
+
+        console.log(Number('1234abcd'));    // NaN Not a Number
+        // 문자열 안에 문자abcd 포함되어 있으면 NaN주의
+
+        console.log(Number(true));      // 1
+        console.log(Number(false));     // 0
     </script>
 </section>
 

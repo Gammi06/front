@@ -164,7 +164,9 @@
         .f4 {
             height: 250px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
+            align-items: baseline;
             /*
             justify-content: 주축배열 여백값 조정
                 justify-content: flex-start;
@@ -175,11 +177,11 @@
             */
             /*
             align-items: 한줄일 경우
-                align-items: stretch;
-                align-items: center;
-                align-items: flex-start;
-                align-items: flex-end;
-                align-items: baseline;
+                align-items: stretch;       // 여백없이 붙음
+                align-items: center;        // 여백을 가짐
+                align-items: flex-start;    // 스타트 지점에서 여백 알아서
+                align-items: flex-end;      // 밑에서 여백가짐
+                align-items: baseline;      // 글자가 인식하는 위치 // 잘 안씀
             */
         }
 
@@ -196,7 +198,7 @@
         .f4>#d2 {
             background: #f8f;
             width: 300px;
-            font-size: 50px;
+            font-size: 30px;
         }
 
         .f4>#d3 {
@@ -222,7 +224,21 @@
     </div>
     <!--.wrap-->
     <style>
-        .f5 {}
+        .f5 {
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            /*
+            align-content : 여러줄 세로정렬 여백배치
+                align-content: stretch;         // 기본값
+                align-content: flex-start;      // 여백이 밑으로 몰림
+                align-content: flex-end;        // 여백이 위로 몰림
+                align-content: center;          // 콘텐츠를 가운데로, 위아래 여백
+                align-content: space-around;    // 콘텐츠의 위아래로 여백 줌
+                align-content: space-between;   // 콘텐츠를 위아래로 옮긴 후 사이에 여백
+            */
+        }
 
         .f5>div {
             height: 100px;
@@ -258,7 +274,19 @@
     </div>
     <!--.wrap-->
     <style>
-        .f7 {}
+        .f7 {
+            display: flex;
+
+            /*
+            플렉스 아이템 순서 설정
+            {order: 숫자}
+            양수(+): 숫자값 순서대로 
+            음수(-): (-)숫자값이 큰 순서대로 배열됨
+            - 웹접근성 측면에서 시작장애인을 위해
+            스크린 리더기로 읽을때 order를 이용해 순서를 변경한것은 의미X
+            (태그순대로 읽어짐)
+            */
+        }
 
         .f7>div {
             height: 100px;
@@ -266,14 +294,17 @@
 
         .f7>#d1 {
             background: #fac;
+            order: 3;
         }
 
         .f7>#d2 {
             background: #afc;
+            order: -1;
         }
 
         .f7>#d3 {
             background: #acf;
+            order: -3;
         }
     </style>
 
@@ -289,7 +320,19 @@
     </div>
     <!--.wrap-->
     <style>
-        .f8 {}
+        .f8 {
+            display: -webkit-flex;
+            display: flex;
+
+            /*
+            flex: flex-grow값 flex-shrink값 flex-basis값;
+                    늘림           줄임      기본사이즈
+            1) flex-grow: 부모태그에 여백이 있을 때
+                          아이템(자식태그) 크기를 늘릴 수 있음
+            2) flex-shrink: 부모태그 아이템크기가 넘칠때 줄일 수 있음 
+            3) flex-basis: 아이템의 기본 크기를 지정함
+            */
+        }
 
         .f8>div {
             height: 100px;
@@ -297,14 +340,17 @@
 
         .f8>#d1 {
             background: #ffc;
+            flex: auto;
         }
 
         .f8>#d2 {
             background: #fe1;
+            flex: 3 1 auto;
         }
 
         .f8>#d3 {
             background: #fc0;
+            flex: auto;
         }
     </style>
 

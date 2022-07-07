@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/* 웹사이트 전체를 싸는 영역*/
+#wrap {}
+
+/* header_start----- */
+#header {}
+
+.logo {     /* 한번만 쓰이는 클래스이름은 앞에 생략해도 됨*/
+    text-align: center;
+    height: 70px;
+    /*
+    1) 웹의 큰 구조에서 1번째 자식이 위쪽으로
+    여백을 가질때 margin속성을 사용하면
+    실제로는 부모태그의 위로 여백을 가지게 됨
+    그래서 margin값을 사용하면 X
+    => 대체해서 padding으로 속성값을 적용하기도 함
+    
+    2) 원하는 높이에서 글자를 세로, 가운데 배치하는 공식
+    {height:값; line-height값;}
+    */
+    line-height: 69px;
+    border-bottom: 1px solid #bbb;
+}
+
+.gnb {
+}
+
+.gnb h2 {
+    font-size: 0;
+    line-height: 0;
+}
+
+.gnb ul {
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.gnb ul li {
+    display: inline-block;
+    font-size: 20px;
+    height: 20px;
+    padding: 35px;
+}
+
+/* main_visual_start----- */
+#main_visual {
+    background-image: #ccc;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+#main_visual .left {
+    display: inline-block;
+}
+
+#main_visual .main {
+    display: inline-block;
+}
+
+#main_visual strong{}
+
+#main_visual p{
+    font-weight: normal;
+}
+
+#main_visual .close {}
+
+#main_visual .right {
+    display: inline-block;
+}
+
+/* container_start----- */
+#container {
+    background-image: #a9f;
+    width: 100%;
+    height: 600px;
+}
+
+#container h2 {
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+
+#container ul {
+    display: flex;
+    justify-content: center;
+}
+
+#container ul li {
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin-right: 30px;
+}
+
+#container ul li h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#container ul li p {
+    text-align: center;
+}
+
+#container ul li .photo {
+    width: 580px;
+    height: 400px;
+    background-image: #a9f;
+}
+
+/* footer_start----- */

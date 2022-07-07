@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>조건문_논리연산자</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/template.css" rel="stylesheet">
+</head>
+
+<body>
+<section>
+	<h2>
+        논리연산자
+    </h2>
+    <textarea class="ht6">
+    * 논리연산자 종류
+    1. 논리곱연산자 &&  (and 그리고)
+    2. 논리합연산자 ||  (or 또는)
+    3. 부정연산자   !   (not 부정)
+
+    * 논리연산자 해석
+    && (그리고 and) :
+        - 모든 값이 true -> true 출력
+        - 하나라도 flase -> false 출력
+
+    || (또는 or) :
+        - 하나라도 true  -> true 출력
+        - 모든값이 false -> false 출력
+
+    ! (부정 not) :
+        - 결과값 true  -> false 출력
+        - 결과값 false -> true 출력
+    </textarea>
+    <textarea class="ht3">
+    * 논리연산자 예시로 이해
+    ex1) 아이유 == 가수 && 남성
+        아이유는 가수 '이고(and)' 남성이다.
+        하나라도 false : false 출력
+    
+    ex2) 아이유 == 가수 || 배우
+        아이유는 가수 '이거나(or)' 배우이다.
+        하나라도 true : true 출력
+    </textarea>
+    <script>
+        console.log('논리연산자')
+        var a;
+        var b = 20;
+        var c = 3;
+        var sum;
+        
+        //sum = a == b && a != b;
+        // 1) a == b : a는 빈데이터, b는 20 : 빈데이터 == 20 -> false
+        // 2) a != b : a는 빈데이터, b는 20 : 빈데이터 != 20 -> true
+        // 3) false && true = 하나라도 false라면 false가 출력됨
+        //console.log(sum);
+        
+        //sum = a == b || a != b;
+        // 1) a == b : a는 빈데이터, b는 20 : 빈데이터 == 20 -> false
+        // 2) a != b : a는 빈데이터, b는 20 : 빈데이터 != 20 -> true
+        // 3) false || true = 하나라도 true라면 true가 출력됨
+        //console.log(sum);
+
+        //sum = !(b <= c && a > c)
+        // 1) b <= c : b는 20 <= c는 3 : 20 <= 3 -> false
+        // 2) a > c : a는 null > c는 3 : null > c -> false
+        // false && false = 둘다 false라면 false
+        // !(false) = true가 출력됨
+        //console.log(sum);
+
+        const age = 20;
+        const name = '홍길동';
+        if (age >= 20 && name === '홍길동') {
+            //둘 다 true -> true 출력
+            //age = true / name = true
+            console.log('당신은 성인, 홍길동 확인했습니다.');
+        }
+        if (age >= 20 && name === '성시경') {
+            //하나라도 false -> false 출력
+            //age = true / name = false
+            console.log('당신은 성인, 성시경 확인했습니다.');
+        }
+        if (age >= 20 || name === '홍길동') {
+            //하나라도 true -> true
+            //age = true / name = true
+            console.log('당신은 성인, 홍길동 확인했습니다.');
+        }
+        if (age >= 20 || name === '성시경') {
+            //하나라도 true - > true
+            //age = true / name = false
+            console.log('당신은 성인, 성시경 확인했습니다.');
+        }
+
+        let nums = 10;
+        if (nums) {
+            console.log ('참'); // num에 할당값 X -> false 출력
+        }
+        nums && console.log(nums);
+        //1) 변수값이 할당되어있지 않으면 false -> 실행 불가
+        //2) 변수값이 할당되었다는 자체 true -> true 출력
+    </script>
+</section>
+</body>
+</html>
+
+
+
+
+

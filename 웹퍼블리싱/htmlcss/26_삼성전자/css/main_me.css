@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+/* 웹사이트 전체를 싸는 영역*/
+#wrap {}
+
+/* header_start----- */
+#header {}
+
+.logo {     /* 한번만 쓰이는 클래스이름은 앞에 생략해도 됨*/
+    text-align: center;
+    height: 70px;
+    /*
+    1) 웹의 큰 구조에서 1번째 자식이 위쪽으로
+    여백을 가질때 margin속성을 사용하면
+    실제로는 부모태그의 위로 여백을 가지게 됨
+    그래서 margin값을 사용하면 X
+    => 대체해서 padding으로 속성값을 적용하기도 함
+    
+    2) 원하는 높이에서 글자를 세로, 가운데 배치하는 공식
+    {height:값; line-height값;}
+    */
+    line-height: 69px;
+    border-bottom: 1px solid #bbb;
+}
+
+.gnb {
+    display: flex;
+    justify-content: center;
+}
+
+.gnb h2 {
+    font-size: 0;
+    line-height: 0;
+}
+
+.gnb ul {
+    font-size: 0;
+}
+
+.gnb ul li {
+    display: inline-block;
+    font-size: 20px;
+    height: 20px;
+    padding: 35px;
+}
+
+.gnb ul li:nth-child(1) a {
+    color: #1199ff;
+}
+
+/* main_visual_start----- */
+#main_visual {
+    background-color: #eee;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_visual .left, .right {
+    border-radius: 100%;
+    padding: 10px 5px;
+    border: 3px solid #00f;
+    color: #00f;
+}
+
+#main_visual .main {
+    position: absolute;
+    width: 900px;
+    top: 30%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+#main_visual .main h2{
+
+}
+
+#main_visual .main button {
+    padding: 10px 40px;
+    margin-top: 40px ;
+    background: #1199ff;
+    border: none;
+    color: #fff;
+}
+
+#main_visual h2 p {
+    font-weight: normal;
+}
+
+/* container_start----- */
+#container .best {
+    background-color: #84def9;
+    width: 100%;
+    height: 700px;
+}
+
+#container .best  ul {
+    display: flex;
+    justify-content: center;
+}
+
+#container .best ul li {
+    border: 1px solid #888;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#container .best ul li:last-child {
+    margin-right: 0;
+}
+
+#container .best img {
+    width: 580px;
+    height: 400px;
+    background-color: #ccc;
+}
+
+#container .best .txt {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+}
+
+#container .best h2 {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+#container .best h3 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 15px;
+}
+
+#container .surv {
+    width: 100%;
+    height: 600px;
+    border-bottom: 1px solid #bbb;
+}
+
+#container .surv h2 {
+    padding-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#container .surv  ul {
+    display: flex;
+    justify-content: center;
+}
+
+#container .surv ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+#container .surv ul li:last-child {
+    margin-right: 0;
+}
+
+#container .surv img {
+    width: 285px;
+    height: 300px;
+    background-color: #ccc;
+}
+
+#container .surv .txt {
+    background: #1199ff;
+    padding: 20px 30px;
+    text-align: center;
+    color: #fff;
+}
+
+#container .surv .txt h3 {
+    margin-bottom: 10px;
+}
+
+/* footer_start----- */
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+#footer h2 {
+    padding-right: 50px;
+}
+
+#footer .menu {
+    margin-bottom: 20px;
+}
+
+#footer .menu li {
+    display: inline-block;
+    padding: 0 15px;
+    border-right: 1px solid #222;
+}
+
+#footer .menu li:nth-child(1) {
+    padding-left: 0;
+}
+
+#footer .menu li:last-child {
+    border-right: 0;
+}
+
+#footer .info {
+    width: 900px;
+}
+
+#footer .info div {
+    
+}
+
+#footer .familly {
+    display: block;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: 1px solid #888;
+    color: #888;
+    background-color: #fff;
+}

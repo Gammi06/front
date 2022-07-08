@@ -13,103 +13,43 @@
     <div id="wrap">
         <header id="header">
             <h1 class="logo">
-                <a href="#">
-                    삼성전자
-                </a>
+                <a href="#">삼성전자</a>
             </h1><!--.logo-->
             <nav class="gnb">
                 <h2>메인메뉴</h2> <!--화면에 보이지 않게-->
                 <ul>
-                    <li><a href="#">
-                        브랜드스토리
-                    </a></li>
-                    <li><a href="#">
-                        서비스안내
-                    </a></li>
-                    <li><a href="#">
-                        제품소개
-                    </a></li>
-                    <li><a href="#">
-                        프로모션
-                    </a></li>
-                    <li><a href="#">
-                        고객의소리
-                    </a></li>
+                    <!--원래 자바스크립트로 구현하지만 확인용으로-->
+                    <li class="active"><a href="#">브랜드스토리</a></li>
+                    <li><a href="#">서비스안내</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">프로모션</a></li>
+                    <li><a href="#">고객의소리</a></li>
                 </ul>
             </nav><!--.navigaion global navigaion bar-->
         </header><!--#header-->
         <div id="main_visual">
-            <button class="left">
-                이전
-            </button>
-            <div class="main">
-                <h2>
-                    <strong>Samsung Care+</strong>
-                    <p>걱정은 덜고 안심은 더하세요!</p>
-                </h2>
-                <button class="close">자세히보기</button>
-            </div>
-            <button class="right">
-                다음
-            </button>
+            <div class="inner"><!--실제 컨텐츠가 존재하는 공간영역-->
+                <div class="mv_txt">
+                    <p class="tit">
+                        <strong>Samsug Care+</strong><br>
+                        걱정은 덜고 안심은 더하세요!
+                    </p><!--.tit-->
+                    <p class="more"><a href="#">
+                        자세히보기
+                    </a></p><!--.more-->
+                </div><!--.mv_txt-->
+                <p class="btn_prev"><a href="#">
+                    이전
+                </a></p><!--.btn_prev-->
+                <p class="btn_next"><a href="#">
+                    다음
+                </a></p><!--.btn_next-->
+            </div><!--.inner-->
         </div><!--#main_visual-->
         <main id="container">
-            <div class="best">
-                <h2>베스트 제품</h2>
-                <ul>
-                    <li><a>
-                        <img>
-                        <div class="txt">
-                            <h3>제품명1</h3>
-                            <p>제품 상세설명 입니다.</p>
-                        </div>
-                    </li></a>
-                    <li><a>
-                        <img>
-                        <div class="txt">
-                            <h3>제품명2</h3>
-                            <p>제품 상세설명 입니다.</p>
-                        </div>
-                    </a></li>
-                </ul>
-            </div><!--.best-->
-            <div class="surv">
-                <h2>주요 서비스 안내</h2>
-                <ul>
-                    <li><a>
-                        <img>
-                        <div class="txt">
-                            <h3>챗봇상담</h3>
-                            <p>챗봇상담 상세설명</p>
-                        </div>
-                    </a></li>
-                    <li><a>
-                        <img>
-                        <div class="txt">
-                            <h3>이메일상담</h3>
-                            <p>이메일상담 상세설명</p>
-                        </div>
-                    </a></li>
-                    <li><a>
-                        <img>
-                        <div class="txt">
-                            <h3>원격상담</h3>
-                            <p>원격상담 상세설명</p>
-                        </div>
-                    </a></li>
-                    <li><a>
-                        <img>
-                        <div class="txt">
-                            <h3>센터찾기</h3>
-                            <p>센터찾기 상세설명</p>
-                        </div>
-                    </a></li>
-                </ul>
-            </div>
         </main><!--#container-->
         <footer id="footer">
-            <h2>삼성전자</h2>
-            </footer><!--#footer-->
+        </footer><!--#footer-->
     </div><!--#wrap-->
 </body>
 </html>

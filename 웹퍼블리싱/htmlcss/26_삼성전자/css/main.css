@@ -3,12 +3,15 @@
 /* 웹사이트 전체를 싸는 영역*/
 #wrap {}
 
-/* header_start----- */
-#header {}
+/* #header_start----- */
+#header {
+    /**/background-color: #dde;
+}
 
-.logo {     /* 한번만 쓰이는 클래스이름은 앞에 생략해도 됨*/
+#header .logo {
     text-align: center;
     height: 70px;
+    line-height: 70px;
     /*
     1) 웹의 큰 구조에서 1번째 자식이 위쪽으로
     여백을 가질때 margin속성을 사용하면
@@ -19,170 +22,111 @@
     2) 원하는 높이에서 글자를 세로, 가운데 배치하는 공식
     {height:값; line-height값;}
     */
-    line-height: 69px;
-    border-bottom: 1px solid #bbb;
 }
 
-.gnb {
-    display: flex;
+/* 한번만 쓰이는 클래스이름은 앞에 생략해도 됨*/
+#header .gnb {
+    border-top: 1px solid #aaa;
+    display: flex; /* 자식인 gnb를 가운데정렬하기 위해서 display: flex */
     justify-content: center;
+} 
+
+#header .gnb h2 {
+    display: none;
+    /*
+    시맨틱 태그 사용시 제목태그로 영역 타이틀을 지정해 줘야 함
+    실제 ui화면상 표기되지 않을 것임으로 삭제함
+    { display: none; }적용시 해당태그 자체가 아예 작성하지 않은 것처럼 인식됨
+    */
 }
 
-.gnb h2 {
-    font-size: 0;
-    line-height: 0;
-}
-
-.gnb ul {
-    font-size: 0;
-}
-
-.gnb ul li {
-    display: inline-block;
-    font-size: 20px;
-    height: 20px;
-    padding: 35px;
-}
-
-.gnb ul li:nth-child(1) a {
-    color: #1199ff;
-}
-
-/* main_visual_start----- */
-#main_visual {
-    background-color: #eee;
-    width: 100%;
-    height: 600px;
-    position: relative;
+#header .gnb ul {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 750px; /* 박스모델: 150*5 = 750px */
+    /**/background-color: #cc2;
 }
 
-#main_visual .left, .right {
-    border-radius: 100%;
-    padding: 10px 5px;
-    border: 3px solid #00f;
-    color: #00f;
+#header .gnb ul li {
+    flex: 0 0 150px; /* 맨마지막: 플렉스width길이 */
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
 }
 
-#main_visual .main {
-    position: absolute;
-    width: 900px;
-    top: 30%;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+#header .gnb ul li a {
+    font-size: 20px;
+    font-weight: 700; /* bold가능 */
 }
 
-#main_visual .main h2{
-
+#header .gnb ul li:hover a {
+    color: #19f;
+    /*
+    a:hover 로 지정해도 색상은 동일하게 적용되지만,
+    li:hover로 대상을 봐야하는 이유는 추후 depth2, 3...의
+    submenu의 hover범주까지 고려해야 실제 기능 구현이 가능하기 때문에
+    li를 대상으로 지정하는 것이 좋음
+    */
 }
 
-#main_visual .main button {
-    padding: 10px 40px;
-    margin-top: 40px ;
-    background: #1199ff;
-    border: none;
-    color: #fff;
+#header .gnb ul .active a {
+    color: #19f;
 }
+/* a태그의 글자색상 변경은 a태그 색상을 변경해야 인식됨
+:reset.css 초기화 설정때 지정한 a태그의 색상설정 때문 */
 
-#main_visual h2 p {
-    font-weight: normal;
-}
-
-/* container_start----- */
-#container {
-}
-
-#container .best {
-    background-color: #84def9;
+/* #main_visual_start----- */
+#main_visual {
     width: 100%;
     height: 700px;
+    background: url(../img/main_visual.jpg) no-repeat center center;
+    background-size: cover;
 }
 
-#container .best  ul {
-    display: flex;
-    justify-content: center;
+#main_visual .inner {
+    width: 1200px;
+    height: 700px;
+    /**/background-color: #cce;
+    margin: 0 auto;
+    /*
+    == 블록요소 태그 가운데 배치 공식 ==
+    블록요소태그{ width: 값; margin: 0 auto; }
+    
+    //줄이는게 인식이 안되면 밑처럼 풀어서 써야함
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    => 여백 상, 하는 0(없음)
+       여백 좌, 우는 auto(자동)
+       "좌우 자동으로 여백을 배치해서 가운데 정렬"
+
+    margin: 0 auto 0 auto;
+    margin: 0 auto 0;
+    margin: 0 auto;
+    */
+    position: relative;
 }
 
-#container .best ul li {
-    border: 1px solid #888;
-    display: inline-block;
-    margin-right: 30px;
+#main_visual .inner .mv_txt {
+    position: relative;
+    top: 50%;
+    left: 100px;
 }
 
-#container .best ul li:last-child {
-    margin-right: 0;
+#main_visual .inner .mv_txt .tit {
+    font-size: 45px;
+    line-height: 51px;
 }
 
-#container .best img {
-    width: 580px;
-    height: 400px;
-    background-color: #ccc;
+#main_visual .inner .mv_txt .more {}
+
+#main_visual .inner .btn_prev {
 }
 
-#container .best .txt {
-    text-align: center;
-    background-color: #fff;
-    padding: 30px;
+#main_visual .inner .btn_next {
 }
 
-#container .best h2 {
-    text-align: center;
-    padding-top: 50px;
-    margin-bottom: 30px;
-}
+/* #container_start----- */
 
-#container .best h3 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    margin-bottom: 15px;
-}
-
-#container .surv {
-    width: 100%;
-    height: 600px;
-    border-bottom: 1px solid #bbb;
-}
-
-#container .surv h2 {
-    padding-top: 50px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-#container .surv  ul {
-    display: flex;
-    justify-content: center;
-}
-
-#container .surv ul li {
-    display: inline-block;
-    margin: 10px;
-}
-
-#container .surv ul li:last-child {
-    margin-right: 0;
-}
-
-#container .surv img {
-    width: 285px;
-    height: 300px;
-    background-color: #ccc;
-}
-
-#container .surv .txt {
-    background: #1199ff;
-    padding: 20px 30px;
-    text-align: center;
-    color: #fff;
-}
-
-#container .surv .txt h3 {
-    margin-bottom: 10px;
-}
-
-/* footer_start----- */
-#footer {
-    height: 200px;
-}
+/* #footer_start----- */

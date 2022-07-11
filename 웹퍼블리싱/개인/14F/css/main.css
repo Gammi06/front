@@ -56,15 +56,18 @@
 
 /* #main_visual_start----- */
 #main_visual {
+    margin: 80px 0;
     background-color: antiquewhite;
 }
 
 #main_visual .inner {
-    width: 910px;
+    margin: 0 auto;
+    width: 920px;
 }
 
 #main_visual .inner .main_slide {
-    padding: 60px;
+    margin-left: 82.5px;
+    position: relative;
 }
 
 #main_visual .inner .main_slide ul {}
@@ -73,26 +76,70 @@
     display: inline-block;
 }
 
-#main_visual .inner .main_slide ul li .tit {
+
+#main_visual .inner .main_slide ul li .txt {
     width: 307px;
     height: 187px;
-    background-color: #460C99;
     padding: 65px 70px 95px;
+    background-color: #460C99;
+    float: left;
+}
+
+#main_visual .inner .main_slide ul li a h4 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom:  15px;
+}
+
+#main_visual .inner .main_slide ul li a {
     color: #fff;
+    position: relative;
 }
 
-#main_visual .inner .main_slide ul li .txt .tit h4 {
-    font-size: 30px;
+#main_visual .inner .main_slide ul li  .txt .hstag {
+    color: #fff;
+    font-size: 18px;
     font-weight: normal;
-    margin-bottom: 20px;
+    position: absolute;
+    bottom: 60px;
 }
 
-#main_visual .inner .main_slide ul li .txt .hstag {
-    font-size: 20px;
-    font-weight: normal;
+#main_visual .inner .main_slide ul li .photo {
+    float: left;
 }
 
-#main_visual .inner .main_slide ul li .photo img {
+#main_visual .inner .main_slide ul li  .photo img {
     width: 310px;
     height: 347px;
+    display: block;
+}
+
+#main_visual .inner .main_slide .main_btn {
+}
+
+#main_visual .inner .main_slide .main_btn .btn_prev,
+#main_visual .inner .main_slide .main_btn .btn_next {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%; margin-top: -30px; top:50%;
+    background-color: #460C99;
+}
+
+#main_visual .inner .main_slide .main_btn .btn_prev a,
+#main_visual .inner .main_slide .main_btn .btn_next a {
+    font-size: 50px;
+    color: #101010;;
+    font-weight:lighter;
+}
+
+#main_visual .inner .main_slide .main_btn .btn_prev {
+    margin-left: -500px;
+}
+
+#main_visual .inner .main_slide .main_btn .btn_next {
+    margin-left: 368.5px;
 }

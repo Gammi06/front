@@ -28,16 +28,92 @@
                     </li>
                     <li>
                         <label for="email">이메일</label>
-                        <input type="email" is="email" placeholder="이메일 주소 입력">
+                        <input type="email" id="email" placeholder="이메일 주소 입력" maxlength="20">
                         <span>@naver.com</span>
                     </li>
                 </ul>
             </fieldset>
             <fieldset>
                 <legend>배송지 정보</legend>
+                <ul>
+                    <li>
+                        <label for="addr">주소지</label>
+                        <input type= "text" id="addr" placeholder="배송받을 장소 입력" size="40" required>
+                    </li>
+                    <li>
+                        <label for="tel2">연락처</label>
+                        <select>
+                            <option>SKT</option>
+                            <option>KT</option>
+                            <option>LG</option>
+                        </select>
+                        <input type="tel" id="tel2" placeholder="받으실 분의 연락처 입력">
+                    </li>
+                    <li>
+                        <div>
+                            <label for="in_addr">배송지 작성</label>
+                            <input type= "radio" id="home" name="order">
+                            <label for="home">집</label>
+                            <input type= "radio" id="office" name="order">
+                            <label for="office">회사</label>
+                        </div>
+                        <div>
+                            <textarea cols="40" rows = "2" id="in_addr">상세주소</textarea>
+                        </div>
+                    </li>
+                </ul>
             </fieldset>
             <fieldset>
-                <legend>주문내역</legend>
+                <legend>주문정보</legend>
+                <ul>
+                    <li>
+                        <label>주문일</label>
+                        <input type="date">
+                    </li>
+                    <li>
+                        <br>
+                        <h3>최근 한달간 주문조회</h3>
+                        <div>
+                            <label>한달간 날짜조회</label>
+                            <input type="date" min="2022-06-10" max="2022-07-10">
+                            <br>
+                            <input type="month">            <!--달-->
+                            <input type="week">             <!--주-->
+                            <input type="time">             <!--시간-->
+                            <input type="datetime-local">   <!--년,월,일,시간-->
+                        </div>
+                    </li>
+                    <li>
+                        <label>영수증 첨부</label>
+                        <input type="file">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>상품 정보</legend>
+                <ul>
+                    <li>
+                        <label for="pd_name">상품명 검색</label>
+                        <input type="search" id="pd_name">
+                        <input type="submit">
+                    </li>
+                    <li>
+                        <label>상품수량</label>
+                        <input type="number" min="1" max="100">
+                    </li>
+                    <li>
+                        <label>상품색상</label>
+                        <input type="color" value="#ff0000"></input>
+                    </li>
+                    <li>
+                        <label>상품 결제 웹사이트</label>
+                        <input type="url">
+                    </li>
+                    <li>
+                        <label>배송진행</label>
+                        <progress value="50" max="100"></progress>
+                    </li>
+                </ul>
             </fieldset>
         </form>
     </div>

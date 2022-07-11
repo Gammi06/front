@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/* 웹사이트 전체를 싸는 영역*/
+#wrap {}
+
+.notice {
+    height: 33px;
+    padding: 0 40px;
+    background-color: #3fc;
+    color: #191819;
+    text-align: center;
+    font-size: 12px;
+    line-height: 33px;
+}
+
+/* #header_start----- */
+#header {
+    padding: 36px 0 20px 0;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header .gnb {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .gnb h2 {
+    display: none;
+}
+
+#header .gnb ul {
+}
+
+#header .gnb ul li {
+    font-size: 11px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#header .gnb ul li:last-child {
+    margin-right: 0;
+}
+
+#header .logo {
+    display: block;
+    position: absolute;
+    top: 50%; margin-top: 0px; left: 452.5px;
+}
+
+#header .logo img {
+    width: 95px;
+    height: 110px;
+}
+
+/* #main_visual_start----- */
+#main_visual {
+    background-color: antiquewhite;
+}
+
+#main_visual .inner {
+    width: 910px;
+}
+
+#main_visual .inner .main_slide {
+    padding: 60px;
+}
+
+#main_visual .inner .main_slide ul {}
+
+#main_visual .inner .main_slide ul li {
+    display: inline-block;
+}
+
+#main_visual .inner .main_slide ul li .tit {
+    width: 307px;
+    height: 187px;
+    background-color: #460C99;
+    padding: 65px 70px 95px;
+    color: #fff;
+}
+
+#main_visual .inner .main_slide ul li .txt .tit h4 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#main_visual .inner .main_slide ul li .txt .hstag {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#main_visual .inner .main_slide ul li .photo img {
+    width: 310px;
+    height: 347px;
+}

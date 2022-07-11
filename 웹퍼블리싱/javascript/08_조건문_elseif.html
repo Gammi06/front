@@ -52,14 +52,72 @@
         }
         */
 
+        /*
         var trans = prompt('오늘 이용한 대중교통은?', '');
         var price;
         if (trans == '버스'){
-            price = 1500;
+            price = 1200;
         } else if (trans == '택시') {
             price = 2800;
         }
         document.write('오늘 사용한 교통비는 ' + price + '원 입니다.');
+        */
+
+        /*
+        var member = prompt('직함을 입력하세요.', '사원/팀장');
+        var noti;
+        if (member == '사원') {
+            noti = '사원님, 반갑습니다.';
+        } else if (member == '팀장') {
+            noti = '팀장님, 어서오세요.';
+        } else if (member == '') {
+            noti = '직함을 입력하세요.';
+        } else {
+            noti = '';
+        }
+        alert(noti);
+        */
+
+        /*
+        var color = prompt('원하는 색상을 작성하세요.', '빨강/노랑/파랑');
+        if (color == '빨강') {
+            document.write('<p style = "background: #f00">빨강</p>');
+        } else if (color == '노랑') {
+            document.write('<p style = "background: #fc0">노랑</p>');
+        } else if (color == '파랑') {
+            document.write('<p style = "background: #00f">파랑</p>');
+        } else {
+            document.write('<p>올바른 색상이 아닙니다.</p>');
+        }
+        */
+
+        /*
+        var min = prompt('주민번호 뒷 첫숫자를 입력해주세요.', '1 ~ 4사이 입력');
+        if (min == 1 || min == 3) {
+            document.write('당신은 남성입니다.');
+        } else if (min == 2 || min == 4) {
+            document.write('당신은 여성입니다.');
+        } else {
+            alert('숫자 1~4사이 값만 입력해주세요');
+        }
+        */
+
+        var pass = prompt('귀하의 점수는?', '0~100점 사이 입력');
+        var point = '';
+        if (pass > 100) {
+            document.write('0~100사이의 값을 입력하세요.');
+        } else if (pass >= 90) {
+            point = '채용 합격자 입니다.';
+        } else if (pass >= 80) {
+            point = '2차 면접합격자 입니다.';
+        } else if (pass >= 70) {
+            point = '1차 면접합격자 입니다.';
+        } else if (pass >= 60) {
+            point = '재시험 대상자 입니다.';
+        } else {
+            point = '지원해주셔서 감사합니다.';
+        }
+        document.write('<strong>귀하는 ' + point + '</strong>');
     </script>
 </section>
 </body>

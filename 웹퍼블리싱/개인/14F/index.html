@@ -6,101 +6,396 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>14F 뉴스레터 | </title>
     <meta charset="description" content="content="우리 세상 돌아가는 건 알아야지! 핵심만 탈탈 털어줄게">
-    <link href="css/main.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="wrap">
-        <div class="notice"><a href="#">
-            🏢14F 공식 모바일 앱 출시👨‍💼
-        </a></div>
+        <div id="notice"></div><!--#notice-->
         <header id="header">
+            <h1 class="logo"><a href="#">
+            로고
+            </a></h1><!--.logo-->
             <nav class="gnb">
-                <h2>메인메뉴</h2> <!--화면에 보이지 않게-->
-                <ul class="gnd_1">
-                    <!--원래 자바스크립트로 구현하지만 확인용으로-->
+                <h2>메인메뉴</h2><!--화면에 보이지 않게-->
+                <ul>
                     <li><a href="#">14F이야기</a></li>
                     <li><a href="#">뉴스레터</a></li>
                     <li><a href="#">카드뉴스</a></li>
                     <li><a href="#">먼지Talk</a></li>
                 </ul>
-                <ul class="gnb_2">
+                <ul>
                     <li><a href="#">검색</a></li>
                     <li><a href="#">내 정보</a></li>
                 </ul>
-            </nav>
-            <h1 class="logo"><a href="#">
-                <img src="img/logo.png" alt="14F로고">
-            </a></h1><!--.logo-->
-        </header><!--#header-->
+            </nav><!--.nav-->
+        </div><!--#header-->
         <div id="main_visual">
             <div class="inner">
-                <div class="main_slide">
-                    <ul>
-                        <li ><a href="#" class="cf">
-                            <div class="txt">
-                                <p class="tit">
-                                    <h4>📺역대급 하락장에서 살아...</h4>
-                                    [책 증정 이벤트] 역대급 인플레이션과 경기침체… 지금 시기 투자의 방향은?
-                                </p>
-                                <p class="hstag">#유수진 #오건영 #투자</p>
-                            </div><!--.txt-->
-                            <div class="photo">
-                                <img src="img/main_visual_01.jpg" alt="역대급 하락장에서 살아남는 방법은?">
-                            </div><!--.photo-->
-                        </a></li>
-                        <!--
-                        <li><a href="#" class="cf">
-                            <div class="txt">
-                                <p class="tit">
-                                    <h4>📺마시면서 배우는 세계...</h4>
-                                    도수 10% 이상의 맥주, 있다?없다?
-                                </p>
-                                <p class="hstag">#허니제이 #맥주 #주락이월드</p>
-                            </div>
-                            <div class="photo">
-                                <img src="img/main_visual_02.png" alt="역대급 하락장에서 살아남는 방법은?">
-                            </div>
-                        </a></li>
-                        <li><a href="#" class="cf">
-                            <div class="txt">
-                                <p class="tit">
-                                    <h4>💪고생 끝에 인생샷 온...</h4>
-                                    찜통더위에 숨이 턱턱 막히는 본격 여름🔥 시작!
-                                </p>
-                                <p class="hstag">#보디프로필 #헬스 #다이어트</p>
-                            </div>
-                            <div class="photo">
-                                <img src="img/main_visual_03.png" alt="고생 끝에 인생샷 온다">
-                            </div>
-                        </a></li>-->
-                    </ul>
-                    <div class="main_btn">
-                        <p class="btn_prev"><a href="#">
-                            &lt;
-                        </a></p>
-                        <p class="btn_next"><a href="#">
-                            &gt;
-                        </a></p>
-                    </div>
-                </div><!--.main_slide-->
-                <div class="main_nav">
-                    <ul>
-                        <li>오늘의 레터</li>
-                        <li>경제</li>
-                        <li>재테크</li>
-                        <li>이슈</li>
-                        <li>트렌드</li>
-                        <li>IT</li>
-                        <li>글로벌</li>
-                        <li>환경</li>
-                        <li>스페셜</li>
-                    </ul>
-                </div>
+                <div id="user_info">
+                    <dl>
+                        <dt>우리 세상 돌아가는 건 알아야지,<br>
+                            핵심만 탈탈 털어줄게</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <input type="email" placeholder="이메일">
+                                </li>
+                                <li>
+                                    <input type="text" placeholder="닉네임">
+                                </li>
+                            </ul>
+                            <input type="submit" value="구독하기">
+                        </dd>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="priv">
+                                    <label for="priv">개인정보 수집·이용약관에 동의합니다.(필수)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="promo">
+                                    <label for="promo">광고성 정보수신에 동의합니다.(필수)</label>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div><!--.user_info-->
+                <div id="photo">
+                    <img src="img/visual_img.png" alt="14F">
+                </div><!--.photo-->
             </div><!--.inner-->
         </div><!--#main_visual-->
-        <main id="container"></main><!--#container-->
+        <main id="container">
+            <section class="cont01">
+                <div class="inner">
+                    <div class="post">
+                        <article><a href="#">
+                            <div class="post_txt">
+                                <p class="tit">
+                                    <strong>역대급 하락장에서 살아…</strong>
+                                    [책 증명 이벤트]역대급 인플레이션과 경기침체… 지금 시기 투자의 방향은?
+                                </p><!--.tit-->
+                                <p class="post_tag">
+                                    #유수진 #오건영 #투자
+                                </p><!--.post_tag-->
+                            </div><!--.post_txt-->
+                            <div class="photo">
+                                <img src="img/con01_01.jpg" alt="책 증명 이벤트">;
+                            </div><!--.photo-->
+                        </a></article>
+                        <div class="cont01_btn">
+                            <p class="btn_prev"><a href="#">
+                                &lt;
+                            </a></p><!--.btn_prev-->
+                            <p class="btn_next"><a href="#">
+                                &gt;
+                            </a></p><!--.btn_next-->  
+                        </div>
+                    </div>
+                    <div class="cont01_menu">
+                        <ul>
+                            <li><a href="#">오늘의 레터</a></li>
+                            <li><a href="#">경제</a></li>
+                            <li><a href="#">재태크</a></li>
+                            <li><a href="#">이슈</a></li>
+                            <li><a href="#">트랜드</a></li>
+                            <li><a href="#">IT</a></li>
+                            <li><a href="#">글로벌</a></li>
+                            <li><a href="#">환경</a></li>
+                            <li><a href="#">스페셜</a></li>
+                        </ul>
+                    </div><!--.cont01_menu-->
+                </div><!--.inner-->
+            </section><!--.cont01-->
+            <section class="cont01">
+                <div class="inner">
+                    <h3 class="cont_tit">
+                        <p class="txt">
+                            <p>오늘의 이슈 RGRG?</p>
+                            <strong>뉴스레터</strong>
+                        </p><!--.txt-->
+                        <p class="more"><a href="#">더보기&gt;</a></p><!--.more-->
+                    </h3><!--.cont_tit-->
+                    <div class="letter">
+                        <article><a href="#">
+                            <div class="lt_tit">
+                                <dl>
+                                    <dt>7월 11일<br>뉴스레터</dt>
+                                    <dd>미키 마우스🐭 저작권이 만료된다면?</dd>
+                                    <dd>자는 퇴직연금 깨워라 (ft.디폴트옵션)</dd>
+                                    <dd>💪고생 끝에 인생샷 온다📸</dd>
+                                </dl>
+                            </div><!--.lt_tit-->
+                            <div class="photo">
+                                <img src="img/letter_01.jpg" alt="뉴스레터1">
+                            </div><!--.photo-->
+                        </a></article>
+                        <article><a href="#">
+                            <div class="lt_tit">
+                                <dl>
+                                    <dt>7월 8일<br>뉴스레터</dt>
+                                    <dd>대출 이자 낮은 은행은? 비교 쌉가능</dd>
+                                    <dd>구글이 정말 카톡을 삭제할까?</dd>
+                                    <dd>골프 잘 가고 🎾테니스 어서 오고~</dd>
+                                </dl>
+                            </div><!--.lt_tit-->
+                            <div class="photo">
+                                <img src="img/letter_02.png" alt="뉴스레터2">
+                            </div><!--.photo-->
+                        </a></article>
+                        <article><a href="#">
+                            <div class="lt_tit">
+                                <dl>
+                                    <dt>7월 6일<br>뉴스레터</dt>
+                                    <dd>얼마면 돼, 얼마면 되겠니 🐶😺</dd>
+                                    <dd>🛒난 편의점으로 장보러 간다!</dd>
+                                    <dd>블로그: 나 아직 안 죽었다🤨</dd>
+                                </dl>
+                            </div><!--.lt_tit-->
+                            <div class="photo">
+                                <img src="img/letter_03.png" alt="뉴스레터3">
+                            </div><!--.photo-->
+                        </a></article>
+                        <article><a href="#">
+                            <div class="lt_tit">
+                                <dl>
+                                    <dt>7월 4일<br>뉴스레터</dt>
+                                    <dd>패자만 남은 최저임금 9620원😭</dd>
+                                    <dd>가벼운 모임?🤝 오히려 좋아</dd>
+                                    <dd>대한제국 애국가🎵를 아시나요?</dd>
+                                </dl>
+                            </div><!--.lt_tit-->
+                            <div class="photo">
+                                <img src="img/letter_04.png" alt="뉴스레터4">
+                            </div><!--.photo-->
+                        </a></article>
+                        <article><a href="#">
+                            <div class="lt_tit">
+                                <dl>
+                                    <dt>7월 1일<br>뉴스레터</dt>
+                                    <dd>서울人: 오아시스 마시러 가야G~🤟</dd>
+                                    <dd>주식·코인으로 망한 당신, 개인회생👌</dd>
+                                    <dd>사원님의 손목은 안녕하십니까?👋</dd>
+                                </dl>
+                            </div><!--.lt_tit-->
+                            <div class="photo">
+                                <img src="img/letter_05.png" alt="뉴스레터5">
+                            </div><!--.photo-->
+                        </a></article>
+                        <article><a href="#">
+                            <div class="lt_tit">
+                                <dl>
+                                    <dt>6월 29일<br>뉴스레터</dt>
+                                    <dd>비가 내리고~ 피곤이 흐르고~🎵</dd>
+                                    <dd>나 승진함 대출 이자 깎아줘! 은행: 👌</dd>
+                                    <dd>미국인: 승진이고 뭐고 우린 퇴사한다</dd>
+                                </dl>
+                            </div><!--.lt_tit-->
+                            <div class="photo">
+                                <img src="img/letter_06.png" alt="뉴스레터6">
+                            </div><!--.photo-->
+                        </a></article>
+                    </div><!--.letter-->
+                </div><!--.inner-->
+            </section><!--.cont02-->
+            <section class="cont03">
+                <div class="inner">
+                    <h3 class="cont_tit">
+                        <p class="txt">
+                            <p>핵심만 탈탈</p>
+                            <strong>카드뉴스</strong>
+                        </p><!--.txt-->
+                        <p class="more"><a href="#">더보기&gt;</a></p><!--.more-->
+                        <p class="btn_prev"><a href="#">
+                            &lt;
+                        </a></p><!--.btn_prev-->
+                        <p class="btn_next"><a href="#">
+                            &gt;
+                        </a></p><!--.btn_next-->  
+                    </h3><!--.cont_tit-->
+                    <div class="card">
+                        <article><a href="#">
+                            <div class="photo">
+                                <strong>알바생 구해요~<br>
+                                단, AI만 지원 가능!</strong>
+                                <img src="img/card_01.png" alt="카드뉴스1">
+                            </div><!--.photo-->
+                            <div class="cd_tit">
+                                <dl>
+                                    <dt>다가오는 무인화의 시대, 우리의 자세는?!</dt>
+                                    <dd>2022.07.07</dd>
+                                </dl>
+                            </div><!--.cd_tit-->
+                        </a></article>
+                        <article><a href="#">
+                            <div class="photo">
+                                <strong>이열치열 삼계탕<br>
+                                    말고 영양제 먹자💊</strong>
+                                <img src="img/card_02.png" alt="카드뉴스2">
+                            </div><!--.photo-->
+                            <div class="cd_tit">
+                                <dl>
+                                    <dt>제대로 알고 먹자! 영양제 복용법</dt>
+                                    <dd>2022.07.05</dd>
+                                </dl>
+                            </div><!--.cd_tit-->
+                        </a></article>
+                        <article><a href="#">
+                            <div class="photo">
+                                <strong>(눈)3천 원 돌파!(물)<br>
+                                    고유가 시대에…</strong>
+                                <img src="img/card_03.png" alt="카드뉴스3">
+                            </div><!--.photo-->
+                            <div class="cd_tit">
+                                <dl>
+                                    <dt>LPG 차량은 위험하다는 편견을 깨고 세상에 나온 유일무이 도넛 탱크!</dt>
+                                    <dd>2022.06.30</dd>
+                                </dl>
+                            </div><!--.cd_tit-->
+                        </a></article>
+                        <article><a href="#">
+                            <div class="photo">
+                                <strong>어디까지 갈래?!<br>
+                                반려동물을 위한…</strong>
+                                <img src="img/card_04.png" alt="카드뉴스4">
+                            </div><!--.photo-->
+                            <div class="cd_tit">
+                                <dl>
+                                    <dt>오직 댕냥즈를 위한 상품들 모음zip.</dt>
+                                    <dd>2022.06.28</dd>
+                                </dl>
+                            </div><!--.cd_tit-->
+                        </a></article>
+                    </div><!--.card-->
+                </div><!--.inner-->
+            </section><!--.cont03-->
+            <section class="cont04">
+                <div class="inner">
+                    <h3 class="cont_tit">
+                        <p class="txt">
+                            <p>수다스러운 휴먼들의</p>
+                            <strong>먼지Talk</strong>
+                        </p><!--.txt-->
+                        <p class="more"><a href="#">더보기&gt;</a></p><!--.more-->
+                    </h3><!--.cont_tit-->
+                    <div class="talk">
+                        <div class="photo">
+                            img src="img/talk.png" alt="먼지Talk">
+                            <strong>인사제도를 레벨제로?!<br>
+                                찬성 vs 반대</strong>
+                        </div><!--.photo-->
+                        <div class="talk_txt">
+                            <div class="talk_vs"></div><!--.talk_vs-->
+                            <p>지금 2개의 톡크가 진행중이야</p>
+                            <div class="user_msg">
+                                <ul>
+                                    <li>
+                                        <div class="photo">
+                                            <img src="img/ico-login.png" alt="유저프로필">
+                                        </div><!--.photo-->
+                                        <div class="user_txt">
+                                            <dl>
+                                                <dt>닉네임</dt>
+                                                <dd>내용입력</dd>
+                                            </dl>
+                                        </div><!--.user_txt-->
+                                        <div class="msg_time">
+                                            <p>n 분전</p>
+                                        </div><!--.msg_time-->
+                                    </li>
+                                    <li>
+                                        <div class="photo">
+                                            <img src="img/ico-login.png" alt="유저프로필">
+                                        </div><!--.photo-->
+                                        <div class="user_txt">
+                                            <dl>
+                                                <dt>닉네임</dt>
+                                                <dd>내용입력</dd>
+                                            </dl>
+                                        </div><!--.user_txt-->
+                                        <div class="msg_time">
+                                            <p>n 분전</p>
+                                        </div><!--.msg_time-->
+                                    </li>
+                                    <li>
+                                        <div class="photo">
+                                            <img src="img/ico-login.png" alt="유저프로필">
+                                        </div><!--.photo-->
+                                        <div class="user_txt">
+                                            <dl>
+                                                <dt>닉네임</dt>
+                                                <dd>내용입력</dd>
+                                            </dl>
+                                        </div><!--.user_txt-->
+                                        <div class="msg_time">
+                                            <p>n 분전</p>
+                                        </div><!--.msg_time-->
+                                    </li>
+                                    <li>
+                                        <div class="photo">
+                                            <img src="img/ico-login.png" alt="유저프로필">
+                                        </div><!--.photo-->
+                                        <div class="user_txt">
+                                            <dl>
+                                                <dt>닉네임</dt>
+                                                <dd>내용입력</dd>
+                                            </dl>
+                                        </div><!--.user_txt-->
+                                        <div class="msg_time">
+                                            <p>n 분전</p>
+                                        </div><!--.msg_time-->
+                                    </li>
+                                    <li>
+                                        <div class="photo">
+                                            <img src="img/ico-login.png" alt="유저프로필">
+                                        </div><!--.photo-->
+                                        <div class="user_txt">
+                                            <dl>
+                                                <dt>닉네임</dt>
+                                                <dd>내용입력</dd>
+                                            </dl>
+                                        </div><!--.user_txt-->
+                                        <div class="msg_time">
+                                            <p>n 분전</p>
+                                        </div><!--.msg_time-->
+                                    </li>
+                                    <li>
+                                        <div class="photo">
+                                            <img src="img/ico-login.png" alt="유저프로필">
+                                        </div><!--.photo-->
+                                        <div class="user_txt">
+                                            <dl>
+                                                <dt>닉네임</dt>
+                                                <dd>내용입력</dd>
+                                            </dl>
+                                        </div><!--.user_txt-->
+                                        <div class="msg_time">
+                                            <p>n 분전</p>
+                                        </div><!--.msg_time-->
+                                    </li>
+                                    <li>
+                                        <div class="photo">
+                                            <img src="img/ico-login.png" alt="유저프로필">
+                                        </div><!--.photo-->
+                                        <div class="user_txt">
+                                            <dl>
+                                                <dt>닉네임</dt>
+                                                <dd>내용입력</dd>
+                                            </dl>
+                                        </div><!--.user_txt-->
+                                        <div class="msg_time">
+                                            <p>n 분전</p>
+                                        </div><!--.msg_time-->
+                                    </li>
+                                </ul>
+                            </div><!--user_msg-->
+                        </div><!--.talk_txt-->
+                    </div><!--.talk-->
+                </div><!--.inner-->
+            </section><!--.cont04-->
+        </main><!--#container-->
         <footer id="footer"></footer><!--#footer-->
     </div><!--#wrap-->
 </body>

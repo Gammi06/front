@@ -5,7 +5,6 @@
 
 /* #header_start----- */
 #header {
-    background-color: antiquewhite;
     margin: 0 auto;
     padding: 40px 0 20px 0;
 }
@@ -13,14 +12,12 @@
 #header .inner {
     width: 1200px;
     margin: 0 auto;
-    background-color: cadetblue;
     position: relative;
 }
 
 #header .inner .logo {
     width: 96px;
     height: 110px;
-    background-color: aquamarine;
     position: absolute;
     left: 50%; top: -20px;
     margin-left: -48px;
@@ -62,54 +59,46 @@
 /* #main_visual_start----- */
 #main_visual {
     padding: 70px 0 80px;
-    background-color: coral;
 }
 
 #main_visual .inner {
     width: 1000px;
     margin: 0 auto;
-    background-color: cornsilk;
     display: flex;
 }
 
 #main_visual .inner .user_info {
     width: 400px;
     height: 400px;
-    background-color:darkgoldenrod;
+    background: url(../img/main_visual_deco01.png) no-repeat center #f0fdfa;
+    background-position: right bottom;
+    background-size: 15%;
 }
 
 #main_visual .inner .user_info dl {
-    padding: 50px 0 50px 0;
+    padding: 73px 0 73px 0;
+    width: 340px;
+    margin: 0 auto;
 }
 
 #main_visual .inner .user_info dl dt{
-    font-size: 27px;
+    font-size: 25px;
     font-weight: bold;
     line-height: 34px;
     margin-bottom: 40px;
 }
 
-#main_visual .inner .user_info dl dd{}
-
-#main_visual .inner .user_info dl dd ul {
-    background-color: blueviolet;
-    width: 100%;
+#main_visual .inner .user_info dl .user_input{
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
 }
 
-#main_visual .inner .user_info dl dd ul li {
-    margin-bottom: 10px;
-}
+#main_visual .inner .user_info dl .user_input ul{}
 
-#main_visual .inner .user_info dl dd ul li input {
-    width: 190px;
-    font-size: 12px;
-    line-height: 12px;
-    padding: 12px 14px;
-    border: 2px solid #0D0D26;
-}
-
-#main_visual .inner .user_info dl dd ul li:nth-child(3) input {
-    width: 80px; height: 90px;
+#main_visual .inner .user_info dl .user_input input[type=submit] {
+    width: 80px;
+    height: 90px;
     background-color: #0D0D26;
     color: #fff;
     line-height: 12px;
@@ -117,13 +106,38 @@
     font-weight: bold;
 }
 
+#main_visual .inner .user_info dl .user_input li {
+    margin-bottom: 10px;
+    display: block;
+}
+
+#main_visual .inner .user_info dl .user_input li input{
+    width: 190px;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 11px 14px;
+    border: 2px solid #0D0D26;
+}
+
+#main_visual .inner .user_info dl .user_check  ul li label {
+    font-size: 10px;
+}
+
 #main_visual .inner .photo {
     width: 600px;
     height: 400px;
-    background-color: aquamarine;
 }
 
 #main_visual .inner .photo img {
     width: 100%;
     height: auto;
 }
+
+/* #container_start----- */
+#container {}
+
+#container .inner {
+    width: 1000px;
+}
+
+/* #footer_start----- */

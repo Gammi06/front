@@ -3,14 +3,127 @@
 /* 웹사이트 전체를 싸는 영역*/
 #wrap {}
 
-.notice {
-    height: 33px;
-    padding: 0 40px;
-    background-color: #3fc;
-    color: #191819;
-    text-align: center;
-    font-size: 12px;
-    line-height: 33px;
+/* #header_start----- */
+#header {
+    background-color: antiquewhite;
+    margin: 0 auto;
+    padding: 40px 0 20px 0;
 }
 
-/* #header_start----- */
+#header .inner {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: cadetblue;
+    position: relative;
+}
+
+#header .inner .logo {
+    width: 96px;
+    height: 110px;
+    background-color: aquamarine;
+    position: absolute;
+    left: 50%; top: -20px;
+    margin-left: -48px;
+}
+
+#header .inner .logo a {
+    font-size: 0;
+    line-height: 110px;
+    background: url(../img/logo.png) no-repeat center;
+    background-size: cover;
+    display: block;
+}
+
+#header .inner .gnb {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .inner .gnb h2 {
+    display: none;
+}
+
+#header .inner .gnb ul {}
+
+#header .inner .gnb ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#header .inner .gnb ul li:last-child {
+    margin-right: 0;
+}
+
+#header .inner .gnb ul a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* #main_visual_start----- */
+#main_visual {
+    padding: 70px 0 80px;
+    background-color: coral;
+}
+
+#main_visual .inner {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: cornsilk;
+    display: flex;
+}
+
+#main_visual .inner .user_info {
+    width: 400px;
+    height: 400px;
+    background-color:darkgoldenrod;
+}
+
+#main_visual .inner .user_info dl {
+    padding: 50px 0 50px 0;
+}
+
+#main_visual .inner .user_info dl dt{
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 34px;
+    margin-bottom: 40px;
+}
+
+#main_visual .inner .user_info dl dd{}
+
+#main_visual .inner .user_info dl dd ul {
+    background-color: blueviolet;
+    width: 100%;
+}
+
+#main_visual .inner .user_info dl dd ul li {
+    margin-bottom: 10px;
+}
+
+#main_visual .inner .user_info dl dd ul li input {
+    width: 190px;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 12px 14px;
+    border: 2px solid #0D0D26;
+}
+
+#main_visual .inner .user_info dl dd ul li:nth-child(3) input {
+    width: 80px; height: 90px;
+    background-color: #0D0D26;
+    color: #fff;
+    line-height: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#main_visual .inner .photo {
+    width: 600px;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+#main_visual .inner .photo img {
+    width: 100%;
+    height: auto;
+}

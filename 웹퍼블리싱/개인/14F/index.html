@@ -12,28 +12,29 @@
 
 <body>
     <div id="wrap">
-        <div id="notice"></div><!--#notice-->
         <header id="header">
-            <h1 class="logo"><a href="#">
-            로고
-            </a></h1><!--.logo-->
-            <nav class="gnb">
-                <h2>메인메뉴</h2><!--화면에 보이지 않게-->
-                <ul>
-                    <li><a href="#">14F이야기</a></li>
-                    <li><a href="#">뉴스레터</a></li>
-                    <li><a href="#">카드뉴스</a></li>
-                    <li><a href="#">먼지Talk</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">검색</a></li>
-                    <li><a href="#">내 정보</a></li>
-                </ul>
-            </nav><!--.nav-->
+            <div class="inner">
+                <h1 class="logo"><a href="#">
+                    로고
+                </a></h1><!--.logo-->
+                <nav class="gnb">
+                    <h2>메인메뉴</h2><!--화면에 보이지 않게-->
+                    <ul>
+                        <li><a href="#">14F이야기</a></li>
+                        <li><a href="#">뉴스레터</a></li>
+                        <li><a href="#">카드뉴스</a></li>
+                        <li><a href="#">먼지Talk</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">검색</a></li>
+                        <li><a href="#">내 정보</a></li>
+                    </ul>
+                </nav><!--.nav-->
+            </div><!--.inner-->
         </div><!--#header-->
         <div id="main_visual">
             <div class="inner">
-                <div id="user_info">
+                <div class="user_info">
                     <dl>
                         <dt>우리 세상 돌아가는 건 알아야지,<br>
                             핵심만 탈탈 털어줄게</dt>
@@ -45,8 +46,10 @@
                                 <li>
                                     <input type="text" placeholder="닉네임">
                                 </li>
+                                <li>
+                                    <input type="submit" value="구독하기">
+                                </li>
                             </ul>
-                            <input type="submit" value="구독하기">
                         </dd>
                         <dd>
                             <ul>
@@ -62,7 +65,7 @@
                         </dd>
                     </dl>
                 </div><!--.user_info-->
-                <div id="photo">
+                <div class="photo">
                     <img src="img/visual_img.png" alt="14F">
                 </div><!--.photo-->
             </div><!--.inner-->

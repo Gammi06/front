@@ -1,7 +1,9 @@
 @charset "utf-8";
 
-/* 웹사이트 전체를 싸는 영역*/
+/* 웹사이트 전체를 싸는 영역 */
 #wrap {}
+
+/* 공통 스타일 */
 
 /* #header_start----- */
 #header {
@@ -56,6 +58,12 @@
     font-weight: bold;
 }
 
+#header .inner .gnb ul a:hover {
+    font-size: 14px;
+    font-weight: bold;
+    color: #7fffd4;
+}
+
 /* #main_visual_start----- */
 #main_visual {
     padding: 70px 0 80px;
@@ -70,7 +78,7 @@
 #main_visual .inner .user_info {
     width: 400px;
     height: 400px;
-    background: url(../img/main_visual_deco01.png) no-repeat center #f0fdfa;
+    background: url(../img/mainvisual_deco.png) no-repeat center #f0fdfa;
     background-position: right bottom;
     background-size: 15%;
 }
@@ -134,10 +142,467 @@
 }
 
 /* #container_start----- */
-#container {}
+#container {
+}
 
 #container .inner {
-    width: 1000px;
+    width: 900px;
+    margin: 0 auto;
+    background-color:darkseagreen;
+}
+
+#container .cont_tit .txt p {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+#container .cont_tit .txt strong {
+    font-size: 25px;
+}
+
+#container .cont_tit .more {
+    margin-top: 10px;
+}
+
+#container .cont_tit .more a {
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+#container .cont_tit .more a:hover {
+    color: #7fffd4;
+}
+
+.cont02 .inner .cont_tit,
+.cont04 .inner .cont_tit {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.cont01 {
+    margin-bottom: 120px;
+}
+
+.cont01 .inner .post {
+    position: relative;
+}
+.cont01 .inner .post article {
+}
+
+.cont01 .inner .post a  {
+    display: flex;
+}
+
+.cont01 .inner .post article .post_txt  {
+    width: 340px;
+    height: 250px;
+    padding: 100px 80px;
+    background: url(../img/cont_01_back.png) no-repeat center #460C99;
+    background-size: cover;
+    position: relative;
+} 
+
+.cont01 .inner .post article .post_txt .tit {
+    color: #fff;
+}
+
+.cont01 .inner .post article .post_txt .tit h3 {
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+
+.cont01 .inner .post article .post_txt .tit p {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.cont01 .inner .post article .post_txt .post_tag  {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    bottom: 100px;
+}
+
+.cont01 .inner .post article .photo {
+    width: 400px;
+    height: 450px;
+}
+
+.cont01 .inner .post article .photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont01 .inner .post .cont01_btn {}
+
+.cont01 .inner .post .cont01_btn .btn_prev,
+.cont01 .inner .post .cont01_btn .btn_next {
+    font-size: 80px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%; left: 50%;
+}
+
+.cont01 .inner .post .cont01_btn .btn_prev a,
+.cont01 .inner .post .cont01_btn .btn_next a {
+    display: block;
+}
+
+.cont01 .inner .post .cont01_btn .btn_prev {
+    margin-left: -550px;
+}
+
+.cont01 .inner .post .cont01_btn .btn_next {
+    margin-left: 508.3px;
+}
+
+.cont01 .cont01_menu {
+    background-color: #f2f2f2;
+}
+
+.cont01 .cont01_menu ul {
+    font-size: 0;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.cont01 .cont01_menu ul li {
+    display: inline-block;
+    padding: 20px 0;
+    width: 100px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.cont01 .cont01_menu ul li:nth-child(1),
+.cont01 .cont01_menu ul li:hover {
+    background-color: #0D0D26;
+}
+
+.cont01 .cont01_menu ul li a {
+    display: block;
+    font-size: 14px;
+    padding: 0 10px;
+    border-right: 2px solid #a9a9a9;
+}
+
+.cont01 .cont01_menu ul li:last-child a {
+    border-right: none;
+}
+
+.cont01 .cont01_menu ul li:nth-child(1) a,
+.cont01 .cont01_menu ul li:hover a {
+    border-right: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cont02 {
+    margin-bottom: 120px;
+}
+
+.cont02 .inner .letter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cont02 .inner .letter article {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.cont02 .inner .letter article:nth-child(2n) {
+    margin-right: 0;
+}
+
+.cont02 .inner .letter article a {
+    display: flex;
+}
+
+.cont02 .inner .letter article a:hover .photo img {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.cont02 .inner .letter article .lt_tit {
+    background-color: #f4f4f4;
+    width: 210px;
+    height: 160px;
+    padding: 45px 25px;
+}
+.cont02 .inner .letter article .lt_tit h4 {
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.cont02 .inner .letter article .lt_tit ul {}
+.cont02 .inner .letter article .lt_tit ul li {
+    margin: 0;
+    padding: 5px 15px 5px;
+    list-style: none;
+    background-image: url(../img/ico-newsletter-list.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size:10px;
+    font-size: 12px;
+    line-height: 12px;
+}
+.cont02 .inner .letter article .photo {
+    width: 180px;
+    height: 250px;
+    background: url(../img/ico-eyes.svg) no-repeat center #3fc;
+    background-size: 30%;
+    position: relative;
+}
+
+.cont02 .inner .letter article .photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont03 {
+    margin-bottom: 120px;
+}
+
+.cont03 .inner {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cont03 .inner .cont_tit {
+    width: 180px;
+    margin-right: 20px;
+}
+
+.cont03 .inner .cont_tit .btn {
+    margin-top: 30px;
+}
+.cont03 .inner .cont_tit .btn .btn_prev,
+.cont03 .inner .cont_tit .btn .btn_next {
+    font-size: 30px;
+    font-weight: lighter;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.cont03 .inner .cont_tit .btn .btn_prev a,
+.cont03 .inner .cont_tit .btn .btn_next a {
+    display: block;
+}
+
+.cont03 .inner .cont_tit .btn .btn_prev a {
+    color: #f4f4f4
+}
+
+.cont03 .inner .card {
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+.cont03 .inner .card article {}
+
+.cont03 .inner .card article a {}
+
+.cont03 .inner .card article a:hover .photo img {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.cont03 .inner .card article a:hover .photo strong {
+    display: none;
+}
+
+.cont03 .inner .card article .photo {
+    width: 200px;
+    position: relative;
+    background: url(../img/ico-eyes.svg) no-repeat center #3fc;
+    background-size: 30%;
+}
+.cont03 .inner .card article .photo strong {
+    position: absolute;
+    bottom: 0; margin: 0 10px 10px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.cont03 .inner .card article .photo img {
+    width: 100%;
+    height: auto;
+}
+.cont03 .inner .card article .cd_tit {
+    width: 200px;
+    margin: 15px 0;
+}
+
+.cont03 .inner .card article .cd_tit dl {}
+
+.cont03 .inner .card article .cd_tit dl dt {
+    margin-bottom: 12px;
+}
+
+.cont03 .inner .card article .cd_tit dl dd {
+    color: #8d8d8d;
+    font-size: 10px;
+}
+
+.cont04 {
+    margin-bottom: 120px;
+}
+
+.cont04 .inner .talk {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cont04 .inner .talk .talk_photo {
+    margin-right: 30px;
+}
+
+.cont04 .inner .talk .talk_photo .photo {
+    width: 380px;
+    height: 380px;
+}
+
+.cont04 .inner .talk .talk_photo .photo img {
+    width: 100%;
+    height: auto;
+}
+
+.cont04 .inner .talk .talk_photo .txt {
+    width: 380px;
+    height: 200px;
+    background: url(../img/con04_deco.svg) no-repeat bottom right;
+    /*padding: 50px 50px;*/
+}
+
+.cont04 .inner .talk .talk_photo .txt strong {
+    display: block;
+    width: 280px;
+    color: #fff;
+    background-color: #0D0D26;
+    padding: 50px 50px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.cont04 .inner .talk .talk_txt {
+    width: 490px;
+}
+
+.cont04 .inner .talk .talk_txt .talk_vs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.cont04 .inner .talk .talk_txt .talk_vs .agree,
+.cont04 .inner .talk .talk_txt .talk_vs .disag {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cont04 .inner .talk .talk_txt .talk_vs .disag {
+    flex-direction:row-reverse;
+    justify-content: right;
+}
+
+.cont04 .inner .talk .talk_txt .talk_vs .agree .deco {
+    width: 150px;
+    height: 110px;
+    background: url(../img/cont04_agree.png) no-repeat bottom center;
+    background-size: contain;
+}
+
+.cont04 .inner .talk .talk_txt .talk_vs .agree .txt,
+.cont04 .inner .talk .talk_txt .talk_vs .disag .txt {
+    width: 120px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.cont04 .inner .talk .talk_txt .talk_vs .agree .txt .per,
+.cont04 .inner .talk .talk_txt .talk_vs .disag .txt .per {
+    font-size: 50px;
+    font-weight: bold;
+    color: #b1b1b1;
+}
+
+.cont04 .inner .talk .talk_txt .talk_vs .agree .txt .text,
+.cont04 .inner .talk .talk_txt .talk_vs .disag .txt .text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #b1b1b1;
+    background-color: #f4f4f4;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.cont04 .inner .talk .talk_txt .talk_vs .disag .deco {
+    width: 90px;
+    height: 120px;
+    background: url(../img/cont04_disagree.png) no-repeat bottom right;
+    background-size:contain;
+}
+
+.cont04 .inner .talk .talk_txt .user_count {
+    font-size: 27px;
+    margin-bottom: 40px;
+}
+
+.cont04 .inner .talk .talk_txt .user_count span {
+    color: #460899;
+    font-weight: bold;
+}
+
+.cont04 .inner .talk .talk_txt .user_msg {
+    width: 490px;
+}
+.cont04 .inner .talk .talk_txt .user_msg ul {
+
+}
+.cont04 .inner .talk .talk_txt .user_msg ul li {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cont04 .inner .talk .talk_txt .user_msg ul li .profile {
+    background-color: #888;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.cont04 .inner .talk .talk_txt .user_msg ul li .user_cont {
+    width: 450px;
+}
+
+.cont04 .inner .talk .talk_txt .user_msg ul li .user_cont .info_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont04 .inner .talk .talk_txt .user_msg ul li .user_cont .info_text .name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cont04 .inner .talk .talk_txt .user_msg ul li .user_cont .info_text .minit {
+    font-size: 12px;
+    color: #888;
+}
+
+.cont04 .inner .talk .talk_txt .user_msg ul li .user_cont .msg {
+    font-size: 14px;
 }
 
 /* #footer_start----- */

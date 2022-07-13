@@ -1,5 +1,55 @@
 @charset "utf-8";
 
-#wrap {
-    background: url(../img/bg_join4.jpg) no-repeat;
+html, body {
+    height: 100%;
 }
+
+#wrap {
+    width: 100%;
+    /*height: 100%;*/
+    height: 100vh;      /* 내가 보고있는 윈도우 세로 값을 100% 지정한다는 뜻 */
+    background: url(../img/bg_join4.jpg) no-repeat center center;
+    /*background-size: cover;*/
+    object-fit: cover;
+}
+
+.logo {
+    width: 212px;
+    height: 76px;
+    padding-top: 148px;
+    margin: 0 auto 60px auto;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.logo a {
+    display: block;
+}
+
+.box {
+    width: 335px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 45px 45px 40px 45px;
+}
+.box legend {}
+.box ul {}
+.box ul li {}
+
+.box ul .login label {
+    display: none;
+}
+
+/*
+object-fit  : img, video, object, svg 등 비율이 유지되는 요소들에게 사용하는 속성
+cover       : 비율이 유지되면서 영역안에 가득 채워짐
+contain     : 비율을 유지하면서 영역안에 요소가 가득 들어가도록
+none        : 크기, 비율 상관없이 크기 가운데 배치
+fill        : 요소를 가득 채울 수 있도록 가로, 세로 강제 지정(비율X)
+*/

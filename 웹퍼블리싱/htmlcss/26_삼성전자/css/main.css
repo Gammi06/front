@@ -301,24 +301,79 @@
     background-color: #fce;
 }
 
-#footer #footer_inner {}
+#footer_inner {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fc0;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
 
-#footer #footer_inner .flogo {}
+.flogo {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
 
-#footer #footer_inner .footer_info {}
+.footer_info {}
 
-#footer #footer_inner .footer_info .fmenu {}
+.fmenu {
+    margin-bottom: 15px;
+}
 
-#footer #footer_inner .footer_info .fmenu ul {}
+.fmenu ul {
+    display: -webkit-flex;
+    display: flex;
+    width: 600px;
+    background-color: #cca;
+    justify-content: space-between;
+}
 
-#footer #footer_inner .footer_info .fmenu ul li {}
+.fmenu ul li {
+    border-right: 1px solid #333;
+    flex:0 1 110px;
+    text-align: center;
+}
 
-#footer #footer_inner .footer_info .finfo {}
+.fmenu ul li:nth-child(1) {
+    text-align: left;
+    flex: 0 1 80px;    
+}
 
-#footer #footer_inner .footer_info .finfo p {}
+.fmenu ul li:nth-child(2) {
+    flex: 0 1 150px;
+}
 
-#footer #footer_inner .footer_info .finfo span {}
+.fmenu ul li:last-child {
+    border-right: none;
+}
 
-#footer #footer_inner .footer_info .fcopy {}
+.finfo {
+    font-size: 14px;
+}
 
-#footer #footer_inner .familly {}
+.copy {
+    font-size: 12px;
+}
+
+.familly {
+    width: 150px; height: 30px;
+    border: 1px solid #333;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.familly a {
+    display: block;
+}
+
+.familly:hover {
+    background-color: #19f;
+    border-color: #19f;
+}
+
+.familly:hover a {
+    color: #fff;
+}

@@ -13,17 +13,17 @@
 <body>
     <div id="wrap">
         <header id="header">
-            <div class="inner">
+            <div class="header_inner">
                 <h1 class="logo"><a href="#">
                     로고
                 </a></h1><!--.logo-->
                 <nav class="gnb">
                     <h2>메인메뉴</h2><!--화면에 보이지 않게-->
                     <ul>
-                        <li><a href="#">14F이야기</a></li>
-                        <li><a href="#">뉴스레터</a></li>
-                        <li><a href="#">카드뉴스</a></li>
-                        <li><a href="#">먼지Talk</a></li>
+                        <li><a href="#">14F 이야기</a></li>
+                        <li><a href="#cont02">뉴스레터</a></li>
+                        <li><a href="#cont03">카드뉴스</a></li>
+                        <li><a href="#cont04">먼지Talk</a></li>
                     </ul>
                     <ul>
                         <li><a href="#">검색</a></li>
@@ -33,7 +33,7 @@
             </div><!--.inner-->
         </header><!--#header-->
         <div id="main_visual">
-            <div class="inner">
+            <div class="mv_inner">
                 <div class="user_info">
                     <dl>
                         <dt>우리 세상 돌아가는 건 알아야지,<br>
@@ -69,7 +69,7 @@
             </div><!--.inner-->
         </div><!--#main_visual-->
         <main id="container">
-            <section class="cont01">
+            <section id="cont01">
                 <div class="inner">
                     <div class="post">
                         <article><a href="#">
@@ -98,19 +98,19 @@
                 </div><!--.inner-->
                 <div class="cont01_menu">
                     <ul>
-                        <li><a href="#">오늘의 레터</a></li>
-                        <li><a href="#">경제</a></li>
-                        <li><a href="#">재태크</a></li>
-                        <li><a href="#">이슈</a></li>
-                        <li><a href="#">트랜드</a></li>
-                        <li><a href="#">IT</a></li>
-                        <li><a href="#">글로벌</a></li>
-                        <li><a href="#">환경</a></li>
-                        <li><a href="#">스페셜</a></li>
+                        <li><a href="#cont02">오늘의 레터</a></li>
+                        <li><a href="#cont02">경제</a></li>
+                        <li><a href="#cont02">재태크</a></li>
+                        <li><a href="#cont02">이슈</a></li>
+                        <li><a href="#cont02">트랜드</a></li>
+                        <li><a href="#cont02">IT</a></li>
+                        <li><a href="#cont02">글로벌</a></li>
+                        <li><a href="#cont02">환경</a></li>
+                        <li><a href="#cont02">스페셜</a></li>
                     </ul>
                 </div><!--.cont01_menu-->
             </section><!--.cont01-->
-            <section class="cont02">
+            <section id="cont02">
                 <div class="inner">
                     <h3 class="cont_tit">
                         <div class="txt">
@@ -130,6 +130,9 @@
                                 </ul>
                             </div><!--.lt_tit-->
                             <div class="photo">
+                                <div class ="more">
+                                    <p>보러가기</p>
+                                </div><!--.more--> 
                                 <img src="img/cont02_01.jpg" alt="뉴스레터1">
                             </div><!--.photo-->
                         </a></article>
@@ -143,6 +146,9 @@
                                 </ul>
                             </div><!--.lt_tit-->
                             <div class="photo">
+                                <div class ="more">
+                                    <p>보러가기</p>
+                                </div><!--.more-->
                                 <img src="img/cont02_02.png" alt="뉴스레터2">
                             </div><!--.photo-->
                         </a></article>
@@ -156,6 +162,9 @@
                                 </ul>
                             </div><!--.lt_tit-->
                             <div class="photo">
+                                <div class ="more">
+                                    <p>보러가기</p>
+                                </div><!--.more-->
                                 <img src="img/cont02_03.png" alt="뉴스레터3">
                             </div><!--.photo-->
                         </a></article>
@@ -169,6 +178,9 @@
                                 </ul>
                             </div><!--.lt_tit-->
                             <div class="photo">
+                                <div class ="more">
+                                    <p>보러가기</p>
+                                </div><!--.more-->
                                 <img src="img/cont02_04.png" alt="뉴스레터4">
                             </div><!--.photo-->
                         </a></article>
@@ -182,6 +194,9 @@
                                 </ul>
                             </div><!--.lt_tit-->
                             <div class="photo">
+                                <div class ="more">
+                                    <p>보러가기</p>
+                                </div><!--.more-->
                                 <img src="img/cont02_05.png" alt="뉴스레터5">
                             </div><!--.photo-->
                         </a></article>
@@ -195,13 +210,16 @@
                                 </ul>
                             </div><!--.lt_tit-->
                             <div class="photo">
+                                <div class ="more">
+                                    <p>보러가기</p>
+                                </div><!--.more-->
                                 <img src="img/cont02_06.png" alt="뉴스레터6">
                             </div><!--.photo-->
                         </a></article>
                     </div><!--.letter-->
                 </div><!--.inner-->
             </section><!--.cont02-->
-            <section class="cont03">
+            <section id="cont03">
                 <div class="inner">
                     <h3 class="cont_tit">
                         <div class="txt">
@@ -224,6 +242,9 @@
                                 <strong>알바생 구해요~<br>
                                 단, AI만 지원 가능!</strong>
                                 <img src="img/cont03_01.png" alt="카드뉴스1">
+                                <div class ="more">
+                                    <p>보러가기</p>
+                                </div><!--.more-->
                             </div><!--.photo-->
                             <div class="cd_tit">
                                 <dl>
@@ -237,6 +258,9 @@
                                 <strong>이열치열 삼계탕<br>
                                     말고 영양제 먹자💊</strong>
                                 <img src="img/cont03_02.png" alt="카드뉴스2">
+                                <div class ="more">
+                                    <p>보러가기</p>
+                                </div><!--.more-->
                             </div><!--.photo-->
                             <div class="cd_tit">
                                 <dl>
@@ -250,6 +274,9 @@
                                 <strong>어디까지 갈래?!<br>
                                 반려동물을 위한…</strong>
                                 <img src="img/cont03_04.png" alt="카드뉴스4">
+                                <div class ="more">
+                                    <p>보러가기</p>
+                                </div><!--.more-->
                             </div><!--.photo-->
                             <div class="cd_tit">
                                 <dl>
@@ -261,7 +288,7 @@
                     </div><!--.card-->
                 </div><!--.inner-->
             </section><!--.cont03-->
-            <section class="cont04">
+            <section id="cont04">
                 <div class="inner">
                     <h3 class="cont_tit">
                         <div class="txt">
@@ -282,34 +309,24 @@
                         </div><!--.photo-->
                         <div class="talk_txt">
                             <div class="talk_vs">
-                                <div class="agree">
-                                    <div class="deco"></div><!--.deco-->
-                                    <div class="txt">
-                                        <p class="per">22</p>
-                                        <p class="text">찬성</p>
-                                    </div><!--.txt-->
-                                </div><!--.agree-->
-                                <div class="disag">
+                                <div class="agree"><a href="#">
+                                        <div class="deco"></div><!--.deco-->
+                                        <div class="txt">
+                                            <p class="per">22</p>
+                                            <p class="text">찬성</p>
+                                        </div><!--.txt-->
+                                </a></div><!--.agree-->
+                                <div class="disag"><a href="#">
                                     <div class="deco"></div><!--.deco-->
                                     <div class="txt">
                                         <p class="per">31</p>
                                         <p class="text">반대</p>
                                     </div><!--.txt-->
-                                </div><!--.disag-->
+                                </a></div><!--.disag-->
                             </div><!--.talk_vs-->
                             <div class="user_count">지금 <span>2</span>개의 톡크가 진행중이야</div>
                             <div class="user_msg">
                                 <ul>
-                                    <li>
-                                        <div class="profile"></div><!--.profile-->
-                                        <div class="user_cont">
-                                            <div class="info_text">
-                                                <div class="name">닉네임</div><!--.name-->
-                                                <div class="minit">n 분 전</div><!--.minit-->
-                                            </div>
-                                            <div class="msg">내용입력<br>내용입력</div><!--.msg_cont-->
-                                        </div><!--.user_cont-->
-                                    </li>
                                     <li>
                                         <div class="profile"></div><!--.profile-->
                                         <div class="user_cont">
@@ -367,7 +384,45 @@
                 </div><!--.inner-->
             </section><!--.cont04-->
         </main><!--#container-->
-        <footer id="footer"></footer><!--#footer-->
+        <footer id="footer">
+            <div class="finner">
+                <div class="fheader">
+                    <div class="fmenu">
+                        <ul>
+                            <li><a href="#">14F 이야기</a></li>
+                            <li><a href="#">뉴스레터</a></li>
+                            <li><a href="#">카드뉴스</a></li>
+                            <li><a href="#">먼지Talk</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </div><!--.fmenu-->
+                    <div class="futill">
+                        <ul>
+                            <li><a href="#">서비스이용약관</a></li>
+                            <li><a href="#">개인정보보호정책</a></li>
+                        </ul>
+                    </div><!--.futill-->
+                </div><!--.fheader-->
+                <div class="fcont">
+                    <div class="flogo"></div>
+                    <address class="finfo">
+                        <p>(주)문화방송 대표이사 박성제</p>
+                        <p>서울시 마포구 성암로 267 (03925) MBC</p>
+                        <p>연락처 02-789-0011 | mbc14f@mbc.co.kr</p>
+                    </address>
+                    <div class="fcopylink">
+                        <div class="link">
+                            <ul>
+                                <li><a href="https://ko-kr.facebook.com/login.php?next=https%3A%2F%2Fko-kr.facebook.com%2Fprivacy%2Fconsent%2Fpipa%2F%3Fparams%255Bpft_surface%255D%3Dfacebook_comet%26params%255Bis_new_user_blocking_flow%255D%3Dfalse%26params%255Bpft_session_key%255D%3D82b6c113-9a0f-4527-8b09-650d225c0dbd%26params%255Bis_existing_user_blocking_flow%255D%26source%3Dpipa_blocking_flow"><p>페이스북</p></a></li>
+                                <li><a href="https://www.instagram.com/accounts/login/?next=/mbc14f/"><p>인스타그램</p></a></li>
+                                <li><a href="https://www.youtube.com/c/14FMBC"><p>유튜브</p></a></li>
+                            </ul>
+                        </div>
+                        <div class="copy">Copyrightⓒ Since 2022, MBC All rights reserved.</div>
+                    </div><!--.fcopylink-->
+                </div><!--.fcont-->
+            </div><!--.finner-->
+        </footer><!--#footer-->
     </div><!--#wrap-->
 </body>
 

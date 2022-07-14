@@ -12,6 +12,13 @@ html, body {
     /*background-size: cover;*/
     object-fit: cover;
 }
+/*
+object-fit  : img, video, object, svg 등 비율이 유지되는 요소들에게 사용하는 속성
+cover       : 비율이 유지되면서 영역안에 가득 채워짐
+contain     : 비율을 유지하면서 영역안에 요소가 가득 들어가도록
+none        : 크기, 비율 상관없이 크기 가운데 배치
+fill        : 요소를 가득 채울 수 있도록 가로, 세로 강제 지정(비율X)
+*/
 
 .logo {
     width: 212px;
@@ -38,18 +45,114 @@ html, body {
     margin: 0 auto;
     padding: 45px 45px 40px 45px;
 }
-.box legend {}
-.box ul {}
-.box ul li {}
 
-.box ul .login label {
+fieldset {
+    border: none;
+}
+
+legend {
     display: none;
 }
 
+.login {
+    border-bottom: 1px solid #aaa;
+}
+
+.login label {
+    display: none;
+}
+
+.login input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.check {
+    font-size: 14px;
+    padding: 14px 0;
+}
+.check label {
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+.check input[type="checkbot"] {
+    margin: 3px 5px 0 0;
+}
+
 /*
-object-fit  : img, video, object, svg 등 비율이 유지되는 요소들에게 사용하는 속성
-cover       : 비율이 유지되면서 영역안에 가득 채워짐
-contain     : 비율을 유지하면서 영역안에 요소가 가득 들어가도록
-none        : 크기, 비율 상관없이 크기 가운데 배치
-fill        : 요소를 가득 채울 수 있도록 가로, 세로 강제 지정(비율X)
+    == 폼요소 입력양식태그 가상클래스 선택자 ==
+    input: checked{}       : 체크박스일 경우 체크지정
+    input: focus{}         : 텍스트일 경우 포커스 지정
+    input: enabled{}       : 사용가능한 폼
+    input: disabled{}      : 사용불가능한 폼
+
+    == 속성 선택자 ==
+    : 특정 속성 or 속성값 태그 선택시 []지정
 */
+
+.btn_login input {
+    width: 100%;
+    height: 55px;
+    background-color: #0af;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#footer {
+    width: 100%;
+    height: 35px;
+    background-color: #333;
+    position: fixed;    /* 브라우저 기준으로 */
+    left: 0; bottom: 0;
+}
+
+#footer_inner {
+    width: 1024px;
+    background-color: #08e;
+    margin: 0 auto;
+}
+
+.fmenu {}
+
+.fmenu .more {
+    width: 140px;
+    background-color: #fed;
+    position: relative;
+}
+
+.fmenu .more .btn {
+    display: block;
+    height: 18px;
+    padding: 8.5px 0 8.5px 20px;
+    background: url(../img/icon_arr.png) no-repeat right 0;
+}
+
+.fmenu .more .list {
+    width: 138px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    position: absolute;
+    left: 0; bottom: 35px;
+    padding: 12px 0;
+    display: none;
+}
+
+.fmenu .more .list li a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.fmenu .more:hover .list {
+    display: block;
+}
+
+.fmenu .more:hover .btn {
+    background-position: right -35px;
+}
